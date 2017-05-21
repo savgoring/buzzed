@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Pick Your Own Drink </title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css" />
+
+</head>
+
+<body>
+   
+   
+    <div id="overlay1">
+
+
+        <div id="navbar">
+            
+          
+
+            <a href="index.html"><img src="backA.svg" id="backA"></a>
+
+            <a href="index.html"><img src="homebutton.svg" id="home"></a>
+
+            <a href="custom.html"><img src="search.svg" id="search"></a>
+
+        </div>
+
+        <header class="header__wrap">
+            <div class="wrap nav">
+
+                <a href="index.html"><img src="Buzzed_Logo.svg" alt="LOGO" /></a>
+
+            </div>
+        </header>
+
+
+        <div id="customcoverphoto">
+
+
+
+            <div id="customheader"> FIND YOUR DRINK </div>
+
+            <div id="customsubheader"> GENERATE A DRINK WITH WHAT YOU ALREADY HAVE! </div>
+
+        </div>
+
+
+
+
+
+        <div id="bg1">
+            <img src="number1.png" id="number1">
+            <p id="customtitle"> CHOOSE ALCOHOL TYPE: </p>
+
+
+            <div class="sim-button button12" id="button12_1"><span> VODKA </span></div>
+            <div class="sim-button button12" id="button12_2"><span> GIN </span></div>
+            <div class="sim-button button12" id="button12_3"><span> WINE </span></div>
+            <div class="sim-button button12" id="button12_4"><span> RUM </span></div>
+            <div class="sim-button button12" id="button12_5"><span> TEQUILA </span></div>
+            <div class="sim-button button12" id="button12_6"><span> CHAMPAGNE </span></div>
+            <img src="number2.png" id="number2">
+            <p id="customtitle1"> PICK OCCASION: </p>
+
+
+            <div class="sim-button button12" id="button12_7"><span> GIRLS NIGHT OUT </span></div>
+            <div class="sim-button button12" id="button12_8"><span> GUYS NIGHT OUT </span></div>
+            <div class="sim-button button12" id="button12_9"><span> VACATION </span></div>
+
+
+
+        </div>
+
+
+        <img id="number3" src="number3.png">
+        <p id="submit">FIND DRINK!
+        </p>
+        <img src="questionmark.png" id="question">
+
+
+        <img src="finddrink2.png" id="finddrink">
+
+    </div>
+
+
+    <div id="options">
+        <p id="choices"> OPTIONS FOUND: </p>
+        <div id="title"> </div>
+        <img src="" id="Img">
+        <div id="title2"> </div>
+        <img src="" id="Img2">
+
+    </div>
+    
+     <div id="exitbut"> Go Back </div>
+
+    <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+    </script>
+
+    <script type="text/javascript">
+        var butvodka = document.getElementById("button12_1");
+        var butgin = document.getElementById("button12_2");
+        var butwine = document.getElementById("button12_3");
+        var butrum = document.getElementById("button12_4");
+        var buttequila = document.getElementById("button12_5");
+        var butchampagne = document.getElementById("button12_6");
+
+        var butgirlnight = document.getElementById("button12_7");
+        var butguynight = document.getElementById("button12_8");
+        var butvaca = document.getElementById("button12_9");
+
+        var butsubmit = document.getElementById("submit");
+        var overlay1 = document.getElementById("overlay1");
+        var question = document.getElementById("question");
+
+
+        var num;
+        var occ;
+
+        var exitbut = document.getElementById("exitbut");
+
+
+        butvodka.addEventListener("click", function() {
+            console.log("vodka was selected");
+            num = 1;
+
+
+        });
+
+        butgin.addEventListener("click", function() {
+            console.log(" Gin was selected");
+            num = 2;
+        });
+
+        butwine.addEventListener("click", function() {
+            console.log("wine was selected");
+            num = 3;
+
+        });
+
+        butrum.addEventListener("click", function() {
+            console.log("rum was selected");
+            num = 4;
+        });
+
+        buttequila.addEventListener("click", function() {
+            console.log("tequila was selected");
+            num = 5;
+        });
+
+        butchampagne.addEventListener("click", function() {
+            console.log("champagne was selected");
+            num = 6;
+        });
+
+        butgirlnight.addEventListener("click", function() {
+            console.log("girls night button was selected");
+            occ = 7;
+        });
+
+        butguynight.addEventListener("click", function() {
+            console.log("guys night button was selected");
+            occ = 8;
+        });
+
+        butvaca.addEventListener("click", function() {
+            console.log("vacation button  was selected");
+            occ = 9;
+        });
+
+        var bg = document.getElementById("options");
+        var choice = document.getElementById("choices");
+        var title = document.getElementById("title");
+        var img = document.getElementById("Img");
+        var img2 = document.getElementById("Img2");
+        var title2 = document.getElementById("title2");
+
+        function setStyle() {
+            bg.style.display = "block";
+            choice.style.display = "block";
+            img.style.display = "block";
+            img.style.top = "350px";
+            overlay1.style.filter = "blur(2px) brightness(50%)";
+            overlay1.style.zIndex = "10";
+
+        };
+
+        function setStyleImg2() {
+            img2.style.left = "233px";
+            title2.style.display = "block";
+            img2.style.top = "350px";
+            title.style.display = "block";
+            img2.style.display = "block";
+
+        };
+
+        function setStyleImg() {
+            title.style.display = "block";
+            title.style.left = "120px";
+            title.style.top = "660px";
+            title.style.width = "200px";
+            img.style.left = "0";
+            img.style.right = "0";
+            img.style.top = "350px";
+            img.style.width = "200px";
+            img.style.height = "300px";
+            img.style.bottom = "0";
+            img.style.margin = "0 auto";
+
+
+        };
+
+
+        function setWeb1() {
+            question.style.display = "none";
+            img.style.position = "absolute";
+            img.style.height = "250px";
+            img.style.top = "480px";
+            img.style.left = "1090px";
+            img.style.boxShadow = "none";
+            title.style.position = "absolute"
+            title.style.left = "1190px";
+            title.style.top = "800px";
+            title.style.zIndex = "-1;"
+            title.style.display = "block";
+            title.style.fontFamily = "akrobatregular";
+            title.style.fontSize = "18pt";
+            title.style.color = "white";
+
+
+        };
+
+        function setWeb2() {
+            question.style.display = "none";
+            img.style.position = "absolute";
+            img2.style.position = "absolute";
+            img2.style.left = "1200px";
+            title.style.text = "white";
+            title.style.fontFamily = "KG who tells your story";
+            title2.style.text = "white";
+            img2.style.width = "200px";
+            img2.style.height = "300px";
+            img2.style.top = "470px";
+            img.style.height = "300px";
+            img.style.width = "200px";
+            img.style.top = "470px";
+            img.style.left = "950px";
+            img.style.boxShadow = "none";
+            title.style.position = "absolute"
+            title.style.left = "1220px";
+            title.style.top = "800px";
+            title.style.zIndex = "-1;"
+            title.style.display = "block";
+            title2.style.display = "block";
+            title2.style.left = "1000px";
+            title2.style.position = "absolute";
+            title2.style.top = "800px";
+            title2.style.zIndex = "-1";
+            title2.style.display = "block";
+            title.style.fontFamily = "akrobatregular";
+            title2.style.fontFamily = "akrobatregular";
+            title.style.fontSize = "18pt";
+            title2.style.fontSize = "18pt";
+            title.style.color = "white";
+            title2.style.color = "white";
+
+
+        };
+
+
+        var jmediaquery = window.matchMedia("(max-width: 480px)")
+        if (jmediaquery.matches) {
+            butsubmit.addEventListener("click", function() {
+             
+            exitbut.style.display = "block";
+            
+                
+
+                // VODKA BUTTON
+
+                if (num == 1 && occ == 7) {
+                    setStyle();
+                    setStyleImg2();
+                    title.innerHTML = "COSMO";
+                    title2.innerHTML = "SANGRIA";
+                    title.style.backgroundColor = "rgb(173, 57, 128)";
+                    title2.style.backgroundColor = "rgb(173, 57, 128)";
+                    img.src = "cosmo2.jpg";
+                    img2.src = "sangria.jpg";
+                    img.addEventListener("click", function() {
+                        window.open("cosmo.html", "_self");
+
+                    })
+
+                    img2.addEventListener("click", function() {
+                        window.open("sangria.html", "_self");
+
+                    })
+
+
+                } else if (num == 1 && occ == 8) {
+
+                    setStyle();
+                    setStyleImg2();
+                    title.innerHTML = "CEASER";
+                    title2.innerHTML = "LONG ISLAND";
+                    title.style.backgroundColor = "rgb(56, 161, 110)"
+                    title2.style.backgroundColor = "rgb(56, 161, 110)"
+                    img.src = "ceaser2.jpg";
+                    img.src = "ceaser2.jpg";
+                    img2.src = "longisland.jpg";
+                    img.addEventListener("click", function() {
+                        window.open("ceaser.html", "_self");
+                    })
+                    img2.addEventListener("click", function() {
+                        window.open("longisland.html", "_self");
+                    })
+
+
+                } else if (num == 1 && occ == 9) {
+
+                    setStyle();
+                    setStyleImg();
+                    title.innerHTML = "SEX ON BEACH";
+                    title.style.backgroundColor = "rgb(60, 136, 213)";
+                    img.src = "sexonthebeach.jpg";
+                    img.addEventListener("click", function() {
+                        window.open("sex.html", "_self");
+
+                    })
+                };
+
+
+                //GIN BUTTON 
+
+
+                if (num == 2 && occ == 7) {
+
+                    setStyleImg();
+                    setStyle();
+                    choice.innerHTML = "NO OPTIONS <br> TRY GUYS NIGHT!";
+                    img.src = "sad.png";
+                    img.style.height = "250px";
+                    img.style.top = "375px";
+                    img.style.boxShadow = "none";
+                    exitbut.style.display="block";
+                    exitbut.style.cursor = "pointer";
+
+                    exitbut.addEventListener("click", function() {
+                        window.open("custom.html", "_self");
+
+                    });
+
+
+                } else if (num == 2 && occ == 8) {
+
+                    setStyleImg();
+                    setStyle();
+                    title.style.backgroundColor = "rgb(56, 161, 110)";
+                    title.innerHTML = "GIN & TONIC"
+                    img.src = "guysdrink2.jpg";
+
+                    img.addEventListener("click", function() {
+                        window.open("gin.html", "_self");
+
+                    })
+
+
+                } else if (num == 2 && occ == 9) {
+
+
+                    setStyleImg();
+                    setStyle();
+                    choice.innerHTML = "NO OPTIONS <br> TRY GUYS NIGHT!";
+                    img.src = "sad.png";
+                    img.style.height = "250px";
+                    img.style.top = "375px";
+                    img.style.boxShadow = "none";
+                    title.style.backgroundColor = "mediumpurple";
+                    title.innerHTML = "EXIT";
+
+
+                    title.addEventListener("click", function() {
+                        window.open("custom.html", "_self");
+
+                    });
+                };
+
+                // WINE BUTTON         
+                if (num == 3 && occ == 7) {
+
+                    setStyle();
+                    setStyleImg2();
+                    img.src = "sangria.jpg";
+                    img2.src = "bellini2.jpg";
+                    title.innerHTML = "SANGRIA";
+                    title2.innerHTML = "BELLINI";
+                    title.style.backgroundColor = "rgb(173, 57, 128)";
+                    title2.style.backgroundColor = "rgb(173, 57, 128)";
+                    img.addEventListener("click", function() {
+                        window.open("sangria.html", "_self");
+
+                    })
+
+                    img2.addEventListener("click", function() {
+                        window.open("BelliniRecipe.html", "_self");
+
+                    })
+
+                } else if (num == 3 && occ == 8) {
+
+                    setStyleImg();
+                    setStyle();
+                    choice.innerHTML = "NO OPTIONS <br> TRY GIRLS NIGHT!";
+                    img.src = "sad.png";
+                    img.style.height = "250px";
+                    img.style.top = "375px";
+                    img.style.boxShadow = "none";
+                    title.style.backgroundColor = "mediumpurple";
+                    title.innerHTML = "EXIT";
+
+
+                    title.addEventListener("click", function() {
+                        window.open("custom.html", "_self");
+
+                    });
+                } else if (num == 3 && occ == 9) {
+                    setStyleImg();
+                    setStyle();
+                    choice.innerHTML = "NO OPTIONS <br> TRY GIRLS NIGHT!";
+                    img.src = "sad.png";
+                    img.style.height = "250px";
+                    img.style.top = "375px";
+                    img.style.boxShadow = "none";
+                    title.style.backgroundColor = "mediumpurple";
+                    title.innerHTML = "EXIT";
+
+
+                    title.addEventListener("click", function() {
+                        window.open("custom.html", "_self");
+
+                    });
+
+                }
+
+
+                // RUM BUTTON 
+
+                if (num == 4 && occ == 7) {
+
+                    setStyle();
+                    setStyleImg();
+                    title.innerHTML = "MOJITO"
+                    img.src = "blackberry-mojito1.jpg";
+
+                    img.addEventListener("click", function() {
+                        window.open("mojito.html", "_self");
+
+                    });
+                };
+
+                if (num == 4 && occ == 8) {
+
+                    setStyle();
+                    setStyleImg2();
+                    title.innerHTML = "MINT MOJITO";
+                    title.style.backgroundColor = "rgb(56, 161, 110)";
+                    title2.style.backgroundColor = "rgb(56, 161, 110)";
+                    title2.innerHTML = "LONG ISLAND";
+                    img.src = "mintmojito.jpg";
+                    img2.src = "longisland.jpg";
+
+
+                    img.addEventListener("click", function() {
+                        window.open("mintmojito.html", "_self");
+
+                    })
+
+                    img2.addEventListener("click", function() {
+                        window.open("longisland.html", "_self");
+
+                    })
+
+
+                };
+
+                if (num == 4 && occ == 9) {
+
+                    setStyle();
+                    setStyleImg2();
+                    img.src = "pinacolada.jpg";
+                    img2.src = "sexonthebeach.jpg";
+                    title.innerHTML = "PINA COLADA";
+                    title2.innerHTML = "SEX ON BEACH";
+                    title.style.backgroundColor = "rgb(60, 136, 213)";
+                    title2.style.backgroundColor = "rgb(60, 136, 213)";
+                    img.addEventListener("click", function() {
+                        window.open("pinacolada.html", "_self");
+
+                    })
+
+                    img2.addEventListener("click", function() {
+                        window.open("sex.html", "_self");
+
+                    })
+
+
+                };
+
+                if (num == 5 && occ == 7) {
+
+                    setStyleImg();
+                    setStyle();
+                    choice.innerHTML = "NO OPTIONS <br> TRY VACATION!";
+                    img.src = "sad.png";
+                    img.style.height = "250px";
+                    img.style.top = "375px";
+                    img.style.boxShadow = "none";
+                    title.style.backgroundColor = "mediumpurple";
+                    title.innerHTML = "EXIT";
+
+
+                    title.addEventListener("click", function() {
+                        window.open("custom.html", "_self");
+
+                    });
+
+                }
+
+
+                if (num == 5 && occ == 8) {
+
+                    setStyleImg();
+                    setStyle();
+                    choice.innerHTML = "NO OPTIONS <br> TRY VACATION!";
+                    img.src = "sad.png";
+                    img.style.height = "250px";
+                    img.style.top = "375px";
+                    img.style.boxShadow = "none";
+                    title.style.backgroundColor = "mediumpurple";
+                    title.innerHTML = "EXIT";
+
+
+                    title.addEventListener("click", function() {
+                        window.open("custom.html", "_self");
+
+                    });
+
+
+                }
+
+                if (num == 5 && occ == 9) {
+
+                    setStyle();
+                    setStyleImg();
+                    img.src = "margarita.jpg";
+                    title.innerHTML = "MARGARITA";
+                    title.style.backgroundColor = "rgb(60, 136, 213)";
+                    img.addEventListener("click", function() {
+                        window.open("margarita.html", "_self");
+
+                    })
+
+
+                }
+
+                if (num == 6 && occ == 7) {
+
+                    setStyle();
+                    setStyleImg();
+                    img.src = "bellini2.jpg";
+                    title.innerHTML = "BELLINI"
+                    img.addEventListener("click", function() {
+                        window.open("bellinirecipe.html", "_self");
+
+                    })
+
+
+                }
+
+
+                if (num == 6 && occ == 8) {
+
+                    setStyleImg();
+                    setStyle();
+                    choice.innerHTML = "NO OPTIONS <br> TRY VACATION!";
+                    img.src = "sad.png";
+                    img.style.height = "250px";
+                    img.style.top = "375px";
+                    img.style.boxShadow = "none";
+                    title.style.backgroundColor = "mediumpurple";
+                    title.innerHTML = "EXIT";
+
+
+                    title.addEventListener("click", function() {
+                        window.open("custom.html", "_self");
+
+                    });
+
+                }
+
+
+                if (num == 6 && occ == 9) {
+                    setStyleImg();
+                    setStyle();
+                    choice.innerHTML = "NO OPTIONS <br> TRY VACATION!";
+                    img.src = "sad.png";
+                    img.style.height = "250px";
+                    img.style.top = "375px";
+                    img.style.boxShadow = "none";
+                    title.style.backgroundColor = "mediumpurple";
+                    title.innerHTML = "EXIT";
+
+
+                    title.addEventListener("click", function() {
+                        window.open("custom.html", "_self");
+
+                    });
+                }
+            });
+        }
+
+
+        /////// WEB VERSION ////////
+        else {
+            question.addEventListener('click', function() {
+
+                if (num == 1 && occ == 7) {
+                    setWeb2();
+                    title.innerHTML = "COSMO";
+                    title2.innerHTML = "SANGRIA";
+                    img.src = "cosmo2.jpg";
+                    img2.src = "sangria.jpg";
+                    img.addEventListener("click", function() {
+                        window.open("cosmo.html", "_self");
+
+                    })
+
+                    img2.addEventListener("click", function() {
+                        window.open("sangria.html", "_self");
+
+                    })
+
+
+                } else if (num == 1 && occ == 8) {
+                    setWeb2();
+                    title.innerHTML = "CEASER";
+                    title2.innerHTML = "LONG ISLAND";
+                    img.src = "ceaser2.jpg";
+                    img2.src = "longisland.jpg";
+                    img.addEventListener("click", function() {
+                        window.open("ceaser.html", "_self");
+                    })
+                    img2.addEventListener("click", function() {
+                        window.open("longisland.html", "_self");
+                    })
+
+
+                } else if (num == 1 && occ == 9) {
+                    setWeb1();
+                    title.innerHTML = "SEX ON BEACH";
+                    title.style.backgroundColor = "rgb(60, 136, 213)";
+                    img.src = "sexonthebeach.jpg";
+                    img.addEventListener("click", function() {
+                        window.open("sex.html", "_self");
+
+                    })
+                };
+
+
+                //GIN BUTTON 
+
+
+                if (num == 2 && occ == 7) {
+
+                    setWeb1();
+                    choice.innerHTML = "NO OPTIONS <br> TRY GUYS NIGHT!";
+                    img.src = "sad.png";
+                    img.style.height = "250px";
+                    img.style.top = "475px";
+                    img.style.boxShadow = "none";
+                    title.innerHTML = "EXIT";
+
+
+                    title.addEventListener("click", function() {
+                        window.open("custom.html", "_self");
+
+                    });
+
+
+                } else if (num == 2 && occ == 8) {
+
+                    setWeb1();
+                    title.innerHTML = "GIN & TONIC"
+                    img.src = "guysdrink2.jpg";
+
+                    img.addEventListener("click", function() {
+                        window.open("gin.html", "_self");
+
+                    })
+
+
+                } else if (num == 2 && occ == 9) {
+
+                    setWeb1();
+                    choice.innerHTML = "NO OPTIONS <br> TRY GUYS NIGHT!";
+                    img.src = "sad.png";
+                    img.style.height = "250px";
+                    img.style.top = "775px";
+                    img.style.boxShadow = "none";
+                    title.innerHTML = "EXIT";
+
+
+                    title.addEventListener("click", function() {
+                        window.open("custom.html", "_self");
+
+                    });
+                };
+
+                // WINE BUTTON         
+                if (num == 3 && occ == 7) {
+
+                    setWeb2();
+                    img.src = "sangria.jpg";
+                    img2.src = "bellini2.jpg";
+                    title.innerHTML = "SANGRIA";
+                    title2.innerHTML = "BELLINI";
+
+                    img.addEventListener("click", function() {
+                        window.open("sangria.html", "_self");
+
+                    })
+
+                    img2.addEventListener("click", function() {
+                        window.open("BelliniRecipe.html", "_self");
+
+                    })
+
+                } else if (num == 3 && occ == 8) {
+
+                    setWeb1();
+                    choice.innerHTML = "NO OPTIONS <br> TRY GIRLS NIGHT!";
+                    img.src = "sad.png";
+                    img.style.height = "250px";
+                    img.style.top = "475px";
+                    img.style.boxShadow = "none";
+                    title.innerHTML = "EXIT";
+
+
+                    title.addEventListener("click", function() {
+                        window.open("custom.html", "_self");
+
+                    });
+                } else if (num == 3 && occ == 9) {
+                    setWeb1();
+                    choice.innerHTML = "NO OPTIONS <br> TRY GIRLS NIGHT!";
+                    img.src = "sad.png";
+                    img.style.height = "250px";
+                    img.style.top = "475px";
+                    img.style.boxShadow = "none";
+                    title.innerHTML = "EXIT";
+
+
+                    title.addEventListener("click", function() {
+                        window.open("custom.html", "_self");
+
+                    });
+
+                }
+
+
+                // RUM BUTTON 
+
+                if (num == 4 && occ == 7) {
+
+                    setWeb1();
+                    title.innerHTML = "MOJITO"
+                    img.src = "blackberry-mojito1.jpg";
+
+                    img.addEventListener("click", function() {
+                        window.open("mojito.html", "_self");
+
+                    });
+                };
+
+                if (num == 4 && occ == 8) {
+
+                   setWeb2();
+                    title.innerHTML = "MINT MOJITO";
+                    title2.innerHTML = "LONG ISLAND";
+                    img.src = "mintmojito.jpg";
+                    img2.src = "longisland.jpg";
+
+
+                    img.addEventListener("click", function() {
+                        window.open("mintmojito.html", "_self");
+
+                    })
+
+                    img2.addEventListener("click", function() {
+                        window.open("longisland.html", "_self");
+
+                    })
+
+
+                };
+
+                if (num == 4 && occ == 9) {
+
+                    setWeb2();
+                    img.src="pinacolada.jpg";
+                    img2.src="sexonthebeach.jpg";
+                    title.innerHTML = "PINA COLADA";
+                    title2.innerHTML = "SEX ON BEACH";
+                    img.addEventListener("click", function() {
+                        window.open("pinacolada.html", "_self");
+
+                    })
+
+                    img2.addEventListener("click", function() {
+                        window.open("sex.html", "_self");
+
+                    })
+
+
+                };
+
+                if (num == 5 && occ == 7) {
+
+                    setWeb1();
+                    choice.style.display="block";
+                    choice.innerHTML = "NO OPTIONS <br> TRY VACATION!";
+                    img.src = "sad.png";
+                    img.style.height = "250px";
+                    img.style.top = "475px";
+                    img.style.boxShadow = "none";
+                    title.innerHTML = "EXIT";
+
+
+                    title.addEventListener("click", function() {
+                        window.open("custom.html", "_self");
+
+                    });
+
+                }
+
+
+                if (num == 5 && occ == 8) {
+
+                    setWeb1();
+                    choice.innerHTML = "NO OPTIONS <br> TRY VACATION!";
+                    img.src = "sad.png";
+                    img.style.height = "250px";
+                    img.style.top = "475px";
+                    img.style.boxShadow = "none";
+                    title.innerHTML = "EXIT";
+
+
+                    title.addEventListener("click", function() {
+                        window.open("custom.html", "_self");
+
+                    });
+
+
+                }
+
+                if (num == 5 && occ == 9) {
+
+                    setWeb1();
+                    img.src = "margarita.jpg";
+                    title.innerHTML = "MARGARITA";
+                   
+                    img.addEventListener("click", function() {
+                        window.open("margarita.html", "_self");
+
+                    })
+
+
+                }
+
+                if (num == 6 && occ == 7) {
+
+                    setWeb1();
+                    img.src = "bellini2.jpg";
+                    title.innerHTML = "BELLINI"
+                    img.addEventListener("click", function() {
+                        window.open("bellinirecipe.html", "_self");
+
+                    })
+
+
+                }
+
+
+                if (num == 6 && occ == 8) {
+
+                    setWeb1();
+                    choice.innerHTML = "NO OPTIONS <br> TRY VACATION!";
+                    img.src = "sad.png";
+                    img.style.height = "250px";
+                    img.style.top = "475px";
+                    img.style.boxShadow = "none";
+                    title.innerHTML = "EXIT";
+
+
+                    title.addEventListener("click", function() {
+                        window.open("custom.html", "_self");
+
+                    });
+
+                }
+
+
+                if (num == 6 && occ == 9) {
+                    setWeb1();
+                    choice.innerHTML = "NO OPTIONS :( TRY GIRLS NIGHT!";
+                    img.src = "sad.png";
+                    title.innerHTML = "EXIT";
+                    img.style.height = "250px";
+                    img.style.top = "475px";
+                    img.style.boxShadow = "none";
+                    
+                    title.addEventListener("click", function() {
+                        window.open("custom.html", "_self");
+
+
+                    });
+                }
+
+
+            });
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,4097 @@
+@font-face {
+    font-family: 'akrobatregular';
+    src: url('akrobat-regular-webfont.woff2') format('woff2'), url('akrobat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'kg_who_tells_your_storyRg';
+    src: url('kgwhotellsyourstory_copy-webfont.woff2') format('woff2'), url('kgwhotellsyourstory_copy-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* HOMEPAGE */
+
+#mobilecat {
+    display: none;
+}
+
+#navbar {
+    display: none;
+}
+
+#bg {
+    background-image: url(Coverphoto1.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    display: block;
+}
+
+#header3 {
+    display: none;
+}
+
+#buzzed {
+    background-image: url(Buzzed_FullLogo.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 550px;
+    height: 270px;
+    top: 35%;
+    left: 5%;
+    z-index: -1;
+}
+
+.wrap {
+    width: 1000px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-content: flex-start;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    height: 11%;
+    z-index: 999;
+}
+
+header img {
+    width: 45%;
+    height: 45%;
+    padding: 10%;
+    cursor: pointer;
+}
+
+.nav ul {
+    list-style-type: none;
+}
+
+.nav li {
+    width: 160px;
+    font-family: 'akrobatregular' font-size: 25pt;
+    color: white;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#arrow {
+    position: absolute;
+    top: 90%;
+    left: 45%;
+    width: 5%;
+    height: 5%;
+    z-index: 9999;
+    display: block;
+}
+
+#webcat {
+    display: block;
+}
+
+#girlsnightw {
+    background-image: url(girlsnight.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 120%;
+    width: 100%;
+    height: 20%;
+    font-family: 'kg_who_tells_your_storyRg';
+    font-size: 30pt;
+    color: white;
+    line-height: 2.5;
+    text-align: center;
+    cursor: pointer;
+    z-index: -1;
+}
+
+#guysnightw {
+    background-image: url(guysnight.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 140%;
+    width: 100%;
+    height: 20%;
+    font-family: 'kg_who_tells_your_storyRg';
+    font-size: 30pt;
+    color: white;
+    line-height: 2.5;
+    text-align: center;
+    cursor: pointer;
+    z-index: -1;
+}
+
+#vacationw {
+    background-image: url(vacation.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 160%;
+    width: 100%;
+    height: 20%;
+    font-family: 'kg_who_tells_your_storyRg';
+    font-size: 30pt;
+    color: white;
+    line-height: 2.5;
+    text-align: center;
+    cursor: pointer;
+    z-index: -1;
+}
+
+#customw {
+    background-image: url(custom.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 180%;
+    width: 100%;
+    height: 20%;
+    font-family: 'kg_who_tells_your_storyRg';
+    font-size: 30pt;
+    color: white;
+    line-height: 2.5;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 7%;
+    z-index: -1;
+}
+
+#contact {
+    font-family: 'akrobatregular';
+    font-size: 18pt;
+    color: white;
+    position: absolute;
+    top: 1880px;
+    left: 40%;
+    cursor: pointer;
+}
+
+
+/* CONTACT FORM On Homepage */
+
+#overlay {
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 2100px;
+    background-color: rgba(255, 255, 255, .8);
+    display: none;
+}
+
+#feedback-page {
+    text-align: center;
+}
+
+#form-main {
+    width: 100%;
+    position: fixed;
+    top: 25%;
+    display: none;
+}
+
+#form-div {
+    background-color: rgba(72, 72, 72, 0.4);
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 35px;
+    padding-bottom: 50px;
+    width: 450px;
+    float: left;
+    left: 50%;
+    position: relative;
+    margin-top: 30px;
+    margin-left: -260px;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+}
+
+.feedback-input {
+    color: #3c3c3c;
+    font-family: 'akrobatregular';
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 0;
+    line-height: 22px;
+    background-color: #fbfbfb;
+    padding: 13px 13px 13px 54px;
+    margin-bottom: 10px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 3px solid rgba(0, 0, 0, 0);
+}
+
+.feedback-input:focus {
+    background: #fff;
+    box-shadow: 0;
+    border: 3px solid #FFAF74;
+    color: #FFAF74;
+    outline: none;
+    padding: 13px 13px 13px 54px;
+}
+
+.focused {
+    color: #FFAF74;
+    border: #FFAF74 solid 3px;
+}
+
+
+/* Icons ---------------------------------- */
+
+#name {
+    background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+}
+
+#name:focus {
+    background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+    background-size: 30px 30px;
+    background-position: 8px 5px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+}
+
+#email {
+    background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+}
+
+#email:focus {
+    background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+}
+
+#comment {
+    background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize: vertical;
+}
+
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus {
+    background-color: white;
+}
+
+#sub-button {
+    font-family: 'akrobatregular';
+    float: left;
+    width: 100%;
+    border: #fbfbfb solid 4px;
+    cursor: pointer;
+    background-color: #FFAF74;
+    color: white;
+    font-size: 24px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-weight: 700;
+}
+
+#sub-button:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: #FFAF74;
+}
+
+.submit:hover {
+    color: #FFAF74;
+}
+
+.ease {
+    width: 0px;
+    height: 74px;
+    background-color: #fbfbfb;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -o-transition: .3s ease;
+    -ms-transition: .3s ease;
+    transition: .3s ease;
+}
+
+.submit:hover .ease {
+    width: 100%;
+    background-color: white;
+}
+
+@media only screen and (max-width: 580px) {
+    #form-div {
+        left: 3%;
+        margin-right: 3%;
+        width: 88%;
+        margin-left: 0;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+}
+
+
+/* GIRLS NIGHT DRINKS */
+
+#coverphoto {
+    background-image: url(girlsnight.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 38%;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    display: block;
+}
+
+#header {
+    font-family: 'kg_who_tells_your_storyRg';
+    font-size: 55pt;
+    margin-top: 135px;
+    text-align: center;
+    color: white;
+}
+
+#subheader {
+    font-family: 'kg_who_tells_your_storyRg';
+    font-size: 22pt;
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+}
+
+#gdrink {
+    font-family: 'kg_who_tells_your_storyRg';
+    font-size: 25pt;
+    color: white;
+    text-align: center;
+    margin-top: 550px;
+    background-color: rgba(173, 57, 128, 0.8);
+}
+
+#mojito {
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 36%;
+    left: 0;
+    width: 25%;
+    height: 64%;
+    background-image: url(Blackberry-Mojito1.jpg);
+}
+
+#bellini {
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 36%;
+    left: 25%;
+    width: 25%;
+    height: 64%;
+    background-image: url(bellini2.jpg);
+}
+
+#sangria {
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    width: 25%;
+    height: 64%;
+    background-image: url(sangria.jpg);
+}
+
+#cosmo {
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 36%;
+    left: 75%;
+    width: 25%;
+    height: 64%;
+    background-image: url(cosmo2.jpg);
+}
+
+
+/* GUYS NIGHT DRINK PAGE */
+
+#Gcoverphoto {
+    background-image: url(guysnight.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 38%;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    display: block;
+}
+
+#header1 {
+    font-family: 'kg_who_tells_your_storyRg';
+    font-size: 55pt;
+    margin-top: 105px;
+    text-align: center;
+    color: white;
+}
+
+#subheader1 {
+    font-family: 'kg_who_tells_your_storyRg';
+    font-size: 22pt;
+    margin-top: 5px;
+    text-align: center;
+    color: white;
+}
+
+#bdrink {
+    font-family: 'kg_who_tells_your_storyRg';
+    font-size: 25pt;
+    color: white;
+    text-align: center;
+    margin-top: 550px;
+    background-color: rgba(56, 161, 110, 0.8);
+}
+
+#longisland {
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 36%;
+    left: 0;
+    width: 25%;
+    height: 64%;
+    background-image: url(longisland.jpg);
+}
+
+#ceaser {
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 36%;
+    left: 25%;
+    width: 25%;
+    height: 64%;
+    background-image: url(ceaser2.jpg);
+}
+
+#gin {
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    width: 25%;
+    height: 64%;
+    background-image: url(guysdrink2.jpg);
+}
+
+#mintmojito {
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 36%;
+    left: 75%;
+    width: 25%;
+    height: 64%;
+    background-image: url(mintmojito.jpg);
+}
+
+
+/* VACATION DRINKS PAGE */
+
+#Vcoverphoto {
+    background-image: url(vacation.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 38%;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    display: block;
+}
+
+#vacayhead {
+    font-family: 'kg_who_tells_your_storyRg';
+    font-size: 55pt;
+    margin-top: 105px;
+    text-align: center;
+    color: white;
+}
+
+#vacaysubhead {
+    font-family: 'kg_who_tells_your_storyRg';
+    font-size: 22pt;
+    margin-top: 5px;
+    text-align: center;
+    color: white;
+}
+
+#pinacolada {
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 36%;
+    left: 0;
+    width: 25%;
+    height: 64%;
+    background-image: url(PinaColada.jpg);
+}
+
+#margarita {
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 36%;
+    left: 25%;
+    width: 25%;
+    height: 64%;
+    background-image: url(Margarita.jpg);
+}
+
+#sex {
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    width: 25%;
+    height: 64%;
+    background-image: url(SexontheBeach.jpg);
+}
+
+#lava {
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 36%;
+    left: 75%;
+    width: 25%;
+    height: 64%;
+    background-image: url(LavaFlow.jpg);
+}
+
+#vdrink {
+    font-family: 'kg_who_tells_your_storyRg';
+    font-size: 25pt;
+    color: white;
+    text-align: center;
+    margin-top: 550px;
+    background-color: rgba(60, 136, 213, 0.8);
+}
+
+
+/* CUSTOM PAGE FORM */
+
+#customcoverphoto {
+    background-image: url(custom.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    height: 38%;
+    top: 0;
+    bottom: 0;
+    display: block;
+    left: -.1%;
+}
+
+#customheader {
+    font-family: 'kg_who_tells_your_storyRg';
+    font-size: 60pt;
+    margin-top: 7%;
+    text-align: center;
+    color: white;
+}
+
+#customsubheader {
+    color: white;
+    text-align: center;
+    font-size: 13pt;
+    font-family: 'kg_who_tells_your_storyRg';
+}
+
+.button12 {
+    font-family: 'kg_who_tells_your_storyRg';
+    font-size: 20pt;
+    background-color: mediumpurple;
+    text-align: center;
+    line-height: 1.5;
+    width: 50%;
+    height: 50px;
+    top: 350px;
+    color: rgba(255, 255, 255, 1);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+}
+
+.button12 a {
+    color: rgba(51, 51, 51, 1);
+    text-decoration: none;
+    display: block;
+}
+
+.button12 span {
+    z-index: 2;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.button12::before {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 10%;
+    width: 0;
+    height: 0;
+    border-left: 250px solid transparent;
+    border-right: 250px solid transparent;
+    border-bottom: 325px solid rgba(255, 255, 255, 0.25);
+    z-index: 1;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.button12::after {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 10%;
+    width: 0;
+    height: 0;
+    border-left: 250px solid transparent;
+    border-right: 250px solid transparent;
+    border-bottom: 325px solid rgba(255, 255, 255, 0.25);
+    z-index: 1;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.button12::after {
+    -webkit-transition-delay: 0.2s;
+    /* Safari */
+    transition-delay: 0.2s;
+}
+
+.button12:hover::before {
+    opacity: 1;
+    -webkit-transform: translate(0px, -190px);
+    transform: translate(0px, -190px);
+}
+
+.button12:hover::after {
+    opacity: 1;
+    -webkit-transform: translate(0px, -150px);
+    transform: translate(0px, -150px);
+}
+
+#button12_1 {
+    left: 7%;
+    width: 17%;
+    line-height: 2;
+    top: 420px;
+    box-shadow: 2px 2px 10px black;
+}
+
+#button12_2 {
+    left: 7%;
+    width: 17%;
+    line-height: 2;
+    top: 425px;
+    box-shadow: 2px 2px 10px black;
+}
+
+#button12_3 {
+    left: 7%;
+    top: 430px;
+    width: 17%;
+    line-height: 2;
+    box-shadow: 2px 2px 10px black;
+}
+
+#button12_4 {
+    left: 7%;
+    width: 17%;
+    top: 435px;
+    line-height: 2;
+    box-shadow: 2px 2px 10px black;
+}
+
+#button12_5 {
+    left: 7%;
+    width: 17%;
+    top: 440px;
+    line-height: 2;
+    box-shadow: 2px 2px 10px black;
+}
+
+#button12_6 {
+    left: 7%;
+    top: 445px;
+    width: 17%;
+    line-height: 2;
+    box-shadow: 2px 2px 10px black;
+}
+
+#button12_7 {
+    position: absolute;
+    top: 459px;
+    left: 37%;
+    width: 17%;
+    line-height: 2;
+    box-shadow: 2px 2px 10px black;
+}
+
+#button12_8 {
+    position: absolute;
+    top: 515px;
+    left: 37%;
+    width: 17%;
+    line-height: 2;
+    box-shadow: 2px 2px 10px black;
+}
+
+#button12_9 {
+    position: absolute;
+    top: 572px;
+    left: 37%;
+    width: 17%;
+    line-height: 2;
+    box-shadow: 2px 2px 10px black;
+}
+
+#number1 {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    top: 355px;
+    left: 7%;
+}
+
+#customtitle {
+    left: 7%;
+    width: 20%;
+    height: 33px;
+    font-family: 'kg_who_tells_your_storyRg';
+    font-size: 18pt;
+    color: white;
+    text-align: center;
+    top: 360px;
+    position: absolute;
+    text-shadow: 1px 1px 10px black;
+}
+
+#number2 {
+    top: 7px;
+    width: 135px;
+    height: 39px;
+    position: relative;
+    left: 34%;
+}
+
+#customtitle1 {
+    width: 60%;
+    height: 4%;
+    left: 15%;
+    top: 365px;
+    position: absolute;
+    font-family: 'kg_who_tells_your_storyRg';
+    font-size: 18pt;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 1px 1px 10px black;
+}
+
+#number3 {
+    position: relative;
+    top: 370px;
+    left: 65%;
+    width: 135px;
+    height: 39px;
+}
+
+#submit {
+    width: 12%;
+    height: 7%;
+    left: 70%;
+    top: 364px;
+    padding-left: 17px;
+    line-height: 2.5;
+    text-align: left;
+    position: absolute;
+    font-family: 'kg_who_tells_your_storyRg';
+    font-size: 18pt;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    text-shadow: 1px 1px 6px black;
+}
+
+#finddrink {
+    display: none;
+}
+
+#question {
+    position: fixed;
+    width: 550px;
+    height: 620px;
+    top: 268px;
+    left: 60%;
+    z-index: 1;
+    animation-name: pulse;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        transform: scale(0.90);
+        opacity: 0.6;
+    }
+    50% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.90);
+        opacity: 0.6;
+    }
+}
+
+#bg1 {
+    background: linear-gradient(to bottom, rgba(111, 51, 189, 1) 0%, rgba(111, 51, 189, 1) 25%, rgba(218, 200, 235, 1) 100%);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+
+
+/*All recipes have this: */
+
+.top,
+.bottom {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}
+
+.top {
+    top: 0;
+    border-top: 5px solid;
+    border-top-color: #FFAF74;
+}
+
+.bottom {
+    bottom: 0;
+    border-bottom: 5px solid;
+    border-bottom-color: #FFAF74;
+}
+
+.left {
+    left: 30px;
+    border-left: 5px solid;
+    border-left-color: #FFAF74;
+}
+
+.right {
+    right: 30px;
+    border-right: 5px solid;
+    border-right-color: #FFAF74;
+}
+
+li {
+    color: #FFAF74;
+    position: relative;
+    top: -6px;
+}
+
+li span {
+    color: black;
+}
+
+ul {
+    list-style-position: inside;
+    margin-left: 80px;
+}
+
+
+/*Infographic txt */
+
+.facts {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    text-align: center;
+    font-family: 'akrobatregular';
+    font-size: 18pt;
+    color: white;
+}
+
+
+/* MOJITO DRINK */
+
+#girlbackground {
+    background: linear-gradient(to bottom, #BC548B, #ffffff);
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+}
+
+#Mojcoverphoto {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    background-image: url(Blackberry-Mojito1.jpg);
+    margin-top: 7%;
+    left: 10%;
+    width: 25%;
+    height: 83%;
+}
+
+#Mojheader {
+    font-family: 'kg_who_tells_your_storyRg';
+    color: white;
+    text-align: center;
+    font-size: 35pt;
+    background-color: rgba(173, 57, 128, 0.8);
+}
+
+#mojtitle {
+    font-family: 'kg_who_tells_your_storyRg';
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    width: 50%;
+    height: 5%;
+    font-size: 20pt;
+    margin-top: 7%;
+    display: block;
+    background-color: rgba(173, 57, 128, 0.8);
+}
+
+#mojtitle2 {
+    font-family: 'kg_who_tells_your_storyRg';
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    width: 50%;
+    height: 5%;
+    font-size: 20pt;
+    top: 60%;
+    margin-top: 1.5%;
+    display: block;
+    background-color: rgba(173, 57, 128, 0.8);
+}
+
+#mojtitle3 {
+    font-family: 'kg_who_tells_your_storyRg';
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    width: 50%;
+    height: 5%;
+    font-size: 20pt;
+    top: 80%;
+    background-color: rgba(173, 57, 128, 0.8);
+}
+
+.Mojcorners {
+    position: absolute;
+    width: 48.5%;
+    left: 41%;
+    height: 335px;
+    top: 15%;
+    margin-top: 4%;
+    font-family: 'akrobatregular';
+    font-size: 18pt;
+    column-count: 2;
+    line-height: 4.5;
+}
+
+#mojinstructions {
+    top: 665px;
+    left: 40%;
+    width: 50%;
+    text-align: center;
+    position: absolute;
+    font-family: 'akrobatregular';
+    font-size: 16pt;
+}
+
+@-webkit-keyframes shake {
+    from {
+        -webkit-transform: rotate(5deg);
+    }
+    to {
+        -webkit-transform-origin: center center;
+        -webkit-transform: rotate(-5deg);
+    }
+}
+
+
+/* BELLINI DRINK */
+
+#bellcoverphoto {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    background-image: url(bellini2.jpg);
+    margin-top: 7%;
+    left: 13%;
+    width: 25%;
+    height: 83%;
+}
+
+#bellheader {
+    font-family: 'kg_who_tells_your_storyRg';
+    color: white;
+    text-align: center;
+    font-size: 35pt;
+    background-color: rgba(173, 57, 128, 0.8)
+}
+
+.bellcorners {
+    position: absolute;
+    width: 48.5%;
+    left: 40%;
+    height: 330px;
+    top: 15%;
+    margin-top: 4%;
+    font-family: 'akrobatregular';
+    font-size: 17pt;
+    column-count: 2;
+    line-height: 5;
+}
+
+#belltitle {
+    font-family: 'kg_who_tells_your_storyRg';
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    width: 50%;
+    height: 5%;
+    font-size: 20pt;
+    margin-top: 7%;
+    display: block;
+    background-color: rgba(173, 57, 128, 0.8);
+}
+
+#belltitle2 {
+    font-family: 'kg_who_tells_your_storyRg';
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    width: 50%;
+    height: 5%;
+    font-size: 20pt;
+    top: 60%;
+    margin-top: 1.3%;
+    display: block;
+    background-color: rgba(173, 57, 128, 0.8);
+}
+
+#belltitle3 {
+    font-family: 'kg_who_tells_your_storyRg';
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    width: 50%;
+    height: 5%;
+    font-size: 20pt;
+    top: 80%;
+    background-color: rgba(173, 57, 128, 0.8);
+}
+
+#bellinstructions {
+    top: 665px;
+    left: 40%;
+    width: 50%;
+    text-align: center;
+    position: absolute;
+    font-family: 'akrobatregular';
+    font-size: 16pt;
+}
+
+
+/* SANGRIA DRINK */
+
+#Sangcoverphoto {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    background-image: url(sangria.jpg);
+    margin-top: 7%;
+    left: 13%;
+    width: 25%;
+    height: 83%;
+}
+
+#Sangheader {
+    font-family: 'kg_who_tells_your_storyRg';
+    color: white;
+    text-align: center;
+    font-size: 35pt;
+    background-color: rgba(173, 57, 128, 0.8)
+}
+
+.Sangcorners {
+    position: absolute;
+    width: 48.5%;
+    left: 40%;
+    height: 330px;
+    top: 15%;
+    margin-top: 4%;
+    font-family: 'akrobatregular';
+    font-size: 14pt;
+    column-count: 2;
+    line-height: 5;
+}
+
+#sangtitle {
+    font-family: 'kg_who_tells_your_storyRg';
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    width: 50%;
+    height: 5%;
+    font-size: 20pt;
+    margin-top: 7%;
+    display: block;
+    background-color: rgba(173, 57, 128, 0.8);
+}
+
+#sangtitle2 {
+    font-family: 'kg_who_tells_your_storyRg';
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    width: 50%;
+    height: 5%;
+    font-size: 20pt;
+    top: 60%;
+    margin-top: 1.5%;
+    display: block;
+    background-color: rgba(173, 57, 128, 0.8);
+}
+
+#sangtitle3 {
+    font-family: 'kg_who_tells_your_storyRg';
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    width: 50%;
+    height: 5%;
+    font-size: 20pt;
+    top: 80%;
+    background-color: rgba(173, 57, 128, 0.8);
+}
+
+#sanginstructions {
+    top: 665px;
+    left: 40%;
+    width: 50%;
+    text-align: center;
+    position: absolute;
+    font-family: 'akrobatregular';
+    font-size: 16pt;
+}
+
+
+/* COSMO  DRINK */
+
+#Cosmocoverphoto {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    background-image: url(cosmo2.jpg);
+    margin-top: 7%;
+    left: 13%;
+    width: 25%;
+    height: 83%;
+}
+
+#Cosmoheader {
+    font-family: 'kg_who_tells_your_storyRg';
+    color: white;
+    text-align: center;
+    font-size: 35pt;
+    background-color: rgba(173, 57, 128, 0.8);
+}
+
+#costitle {
+    font-family: 'kg_who_tells_your_storyRg';
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    width: 50%;
+    height: 5%;
+    font-size: 20pt;
+    margin-top: 7%;
+    display: block;
+    background-color: rgba(173, 57, 128, 0.8);
+}
+
+#costitle2 {
+    font-family: 'kg_who_tells_your_storyRg';
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    width: 50%;
+    height: 5%;
+    font-size: 20pt;
+    top: 60%;
+    margin-top: 1.5%;
+    display: block;
+    background-color: rgba(173, 57, 128, 0.8);
+}
+
+#costitle3 {
+    font-family: 'kg_who_tells_your_storyRg';
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    width: 50%;
+    height: 5%;
+    font-size: 20pt;
+    top: 80%;
+    background-color: rgba(173, 57, 128, 0.8);
+}
+
+.cosmocorners {
+    position: absolute;
+    width: 48.5%;
+    left: 40%;
+    height: 335px;
+    top: 15%;
+    margin-top: 4%;
+    font-family: 'akrobatregular';
+    font-size: 14pt;
+    column-count: 2;
+    line-height: 5;
+}
+
+#cosmoinstructions {
+    top: 665px;
+    left: 40%;
+    width: 50%;
+    text-align: center;
+    position: absolute;
+    font-family: 'akrobatregular';
+    font-size: 16pt;
+}
+
+
+/* LONG ISLAND DRINK */
+
+#guysbackground {
+    background: linear-gradient(to bottom, #5CA983, #ffffff);
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+}
+
+#teacoverphoto {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    background-image: url(longisland.jpg);
+    margin-top: 7%;
+    left: 13%;
+    width: 25%;
+    height: 83%;
+}
+
+#teaheader {
+    font-family: 'kg_who_tells_your_storyRg';
+    color: white;
+    text-align: center;
+    font-size: 35pt;
+    background-color: rgba(56, 161, 110, 0.8);
+}
+
+#teatitle {
+    font-family: 'kg_who_tells_your_storyRg';
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    width: 50%;
+    height: 5%;
+    font-size: 20pt;
+    margin-top: 7%;
+    display: block;
+    background-color: rgba(56, 161, 110, 0.8);
+}
+
+#teatitle2 {
+    font-family: 'kg_who_tells_your_storyRg';
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    width: 50%;
+    height: 5%;
+    font-size: 20pt;
+    top: 60%;
+    margin-top: 1.5%;
+    display: block;
+    background-color: rgba(56, 161, 110, 0.8);
+}
+
+#teatitle3 {
+    font-family: 'kg_who_tells_your_storyRg';
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    width: 50%;
+    height: 5%;
+    font-size: 20pt;
+    top: 80%;
+    background-color: rgba(56, 161, 110, 0.8);
+}
+
+.teacorners {
+    position: absolute;
+    width: 48.5%;
+    left: 40%;
+    height: 335px;
+    top: 15%;
+    margin-top: 4%;
+    font-family: 'akrobatregular';
+    font-size: 14pt;
+    column-count: 2;
+    line-height: 5;
+}
+
+#teainstructions {
+    top: 665px;
+    left: 40%;
+    width: 50%;
+    text-align: center;
+    position: absolute;
+    font-family: 'akrobatregular';
+    font-size: 16pt;
+}
+
+
+/* CEASER DRINK */
+
+#guysbackground {
+    background: linear-gradient(to bottom, #5CA983, #ffffff);
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+}
+
+#Ceasercoverphoto {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    background-image: url(ceaser2.jpg);
+    margin-top: 7%;
+    left: 13%;
+    width: 25%;
+    height: 83%;
+}
+
+#Ceaserheader {
+    font-family: 'kg_who_tells_your_storyRg';
+    color: white;
+    text-align: center;
+    font-size: 35pt;
+    background-color: rgba(56, 161, 110, 0.8);
+}
+
+#ceasertitle {
+    font-family: 'kg_who_tells_your_storyRg';
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    width: 50%;
+    height: 5%;
+    font-size: 20pt;
+    margin-top: 7%;
+    display: block;
+    background-color: rgba(56, 161, 110, 0.8);
+}
+
+#ceasertitle2 {
+    font-family: 'kg_who_tells_your_storyRg';
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    width: 50%;
+    height: 5%;
+    font-size: 20pt;
+    top: 60%;
+    margin-top: 1.5%;
+    display: block;
+    background-color: rgba(56, 161, 110, 0.8);
+}
+
+#guystitle3 {
+    font-family: 'kg_who_tells_your_storyRg';
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    width: 50%;
+    height: 5%;
+    font-size: 20pt;
+    top: 80%;
+    background-color: rgba(56, 161, 110, 0.8);
+}
+
+.Ceasercorners {
+    position: absolute;
+    width: 48.5%;
+    left: 40%;
+    height: 335px;
+    top: 15%;
+    margin-top: 4%;
+    font-family: 'akrobatregular';
+    font-size: 14pt;
+    column-count: 2;
+    line-height: 5;
+}
+
+#ceaserinstructions {
+    top: 665px;
+    left: 40%;
+    width: 50%;
+    text-align: center;
+    position: absolute;
+    font-family: 'akrobatregular';
+    font-size: 16pt;
+}
+
+
+/* GIN DRINK */
+
+#guysbackground {
+    background: linear-gradient(to bottom, #5CA983, #ffffff);
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+}
+
+#gincoverphoto {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    background-image: url(guysdrink2.jpg);
+    margin-top: 7%;
+    left: 13%;
+    width: 25%;
+    height: 83%;
+}
+
+#ginheader {
+    font-family: 'kg_who_tells_your_storyRg';
+    color: white;
+    text-align: center;
+    font-size: 35pt;
+    background-color: rgba(56, 161, 110, 0.8);
+}
+
+#gintitle {
+    font-family: 'kg_who_tells_your_storyRg';
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    width: 50%;
+    height: 5%;
+    font-size: 20pt;
+    margin-top: 7%;
+    display: block;
+    background-color: rgba(56, 161, 110, 0.8);
+}
+
+#gintitle2 {
+    font-family: 'kg_who_tells_your_storyRg';
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    width: 50%;
+    height: 5%;
+    font-size: 20pt;
+    top: 60%;
+    margin-top: 1.5%;
+    display: block;
+    background-color: rgba(56, 161, 110, 0.8);
+}
+
+#guystitle3 {
+    font-family: 'kg_who_tells_your_storyRg';
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    width: 50%;
+    height: 5%;
+    font-size: 20pt;
+    top: 80%;
+    background-color: rgba(56, 161, 110, 0.8);
+}
+
+.gincorners {
+    position: absolute;
+    width: 48.5%;
+    left: 40%;
+    height: 335px;
+    top: 15%;
+    margin-top: 4%;
+    font-family: 'akrobatregular';
+    font-size: 14pt;
+    column-count: 2;
+    line-height: 5;
+}
+
+#gininstructions {
+    top: 665px;
+    left: 40%;
+    width: 50%;
+    text-align: center;
+    position: absolute;
+    font-family: 'akrobatregular';
+    font-size: 16pt;
+}
+
+
+/* MINT MOJITO DRINK */
+
+#guysbackground {
+    background: linear-gradient(to bottom, #5CA983, #ffffff);
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+}
+
+#mintcoverphoto {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    background-image: url(mintmojito.jpg);
+    margin-top: 7%;
+    left: 13%;
+    width: 25%;
+    height: 83%;
+}
+
+#mintheader {
+    font-family: 'kg_who_tells_your_storyRg';
+    color: white;
+    text-align: center;
+    font-size: 35pt;
+    background-color: rgba(56, 161, 110, 0.8);
+}
+
+#minttitle {
+    font-family: 'kg_who_tells_your_storyRg';
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    width: 50%;
+    height: 5%;
+    font-size: 20pt;
+    margin-top: 7%;
+    display: block;
+    background-color: rgba(56, 161, 110, 0.8);
+}
+
+#minttitle2 {
+    font-family: 'kg_who_tells_your_storyRg';
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    width: 50%;
+    height: 5%;
+    font-size: 20pt;
+    top: 60%;
+    margin-top: 1.5%;
+    display: block;
+    background-color: rgba(56, 161, 110, 0.8);
+}
+
+#guystitle3 {
+    font-family: 'kg_who_tells_your_storyRg';
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    width: 50%;
+    height: 5%;
+    font-size: 20pt;
+    top: 80%;
+    background-color: rgba(56, 161, 110, 0.8);
+}
+
+.mintcorners {
+    position: absolute;
+    width: 48.5%;
+    left: 40%;
+    height: 335px;
+    top: 15%;
+    margin-top: 4%;
+    font-family: 'akrobatregular';
+    font-size: 14pt;
+    column-count: 2;
+    line-height: 5;
+}
+
+#mintinstructions {
+    top: 665px;
+    left: 40%;
+    width: 50%;
+    text-align: center;
+    position: absolute;
+    font-family: 'akrobatregular';
+    font-size: 16pt;
+}
+
+
+/* PINA COLDA DRINK */
+
+#vacabackground {
+    background: linear-gradient(to bottom, #63A0DD, #ffffff);
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+}
+
+#Pinacoverphoto {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    background-image: url(PinaColada.jpg);
+    margin-top: 7%;
+    left: 13%;
+    width: 25%;
+    height: 83%;
+}
+
+#Pinaheader {
+    font-family: 'kg_who_tells_your_storyRg';
+    color: white;
+    text-align: center;
+    font-size: 35pt;
+    background-color: rgba(60, 136, 213, 0.8);
+}
+
+#pinatitle {
+    font-family: 'kg_who_tells_your_storyRg';
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    width: 50%;
+    height: 5%;
+    font-size: 20pt;
+    margin-top: 7%;
+    display: block;
+    background-color: rgba(60, 136, 213, 0.8);
+}
+
+#pinatitle2 {
+    font-family: 'kg_who_tells_your_storyRg';
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    width: 50%;
+    height: 5%;
+    font-size: 20pt;
+    top: 60%;
+    margin-top: 1.5%;
+    display: block;
+    background-color: rgba(60, 136, 213, 0.8);
+}
+
+#vacatitle3 {
+    font-family: 'kg_who_tells_your_storyRg';
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    width: 50%;
+    height: 5%;
+    font-size: 20pt;
+    top: 80%;
+    background-color: rgba(60, 136, 213, 0.8);
+}
+
+.Pinacorners {
+    position: absolute;
+    width: 48.5%;
+    left: 40%;
+    height: 335px;
+    top: 15%;
+    margin-top: 4%;
+    font-family: 'akrobatregular';
+    font-size: 14pt;
+    column-count: 2;
+    line-height: 5;
+}
+
+#pinainstructions {
+    top: 665px;
+    left: 40%;
+    width: 50%;
+    text-align: center;
+    position: absolute;
+    font-family: 'akrobatregular';
+    font-size: 16pt;
+}
+
+
+/* MARGARTIA  DRINK */
+
+#vacabackground {
+    background: linear-gradient(to bottom, #63A0DD, #ffffff);
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+}
+
+#margcoverphoto {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    background-image: url(Margarita.jpg);
+    margin-top: 7%;
+    left: 13%;
+    width: 25%;
+    height: 83%;
+}
+
+#margheader {
+    font-family: 'kg_who_tells_your_storyRg';
+    color: white;
+    text-align: center;
+    font-size: 35pt;
+    background-color: rgba(60, 136, 213, 0.8);
+}
+
+#margtitle {
+    font-family: 'kg_who_tells_your_storyRg';
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    width: 50%;
+    height: 5%;
+    font-size: 20pt;
+    margin-top: 7%;
+    display: block;
+    background-color: rgba(60, 136, 213, 0.8);
+}
+
+#margtitle2 {
+    font-family: 'kg_who_tells_your_storyRg';
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    width: 50%;
+    height: 5%;
+    font-size: 20pt;
+    top: 60%;
+    margin-top: 1.5%;
+    display: block;
+    background-color: rgba(60, 136, 213, 0.8);
+}
+
+#vacatitle3 {
+    font-family: 'kg_who_tells_your_storyRg';
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    width: 50%;
+    height: 5%;
+    font-size: 20pt;
+    top: 80%;
+    background-color: rgba(60, 136, 213, 0.8);
+}
+
+.margcorners {
+    position: absolute;
+    width: 48.5%;
+    left: 40%;
+    height: 335px;
+    top: 15%;
+    margin-top: 4%;
+    font-family: 'akrobatregular';
+    font-size: 14pt;
+    column-count: 2;
+    line-height: 5;
+}
+
+#marginstructions {
+    top: 665px;
+    left: 40%;
+    width: 50%;
+    text-align: center;
+    position: absolute;
+    font-family: 'akrobatregular';
+    font-size: 16pt;
+}
+
+
+/* SEX ON THE BEACH DRINK */
+
+#vacabackground {
+    background: linear-gradient(to bottom, #63A0DD, #ffffff);
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+}
+
+#sexcoverphoto {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    background-image: url(SexontheBeach.jpg);
+    margin-top: 7%;
+    left: 13%;
+    width: 25%;
+    height: 83%;
+}
+
+#sexheader {
+    font-family: 'kg_who_tells_your_storyRg';
+    color: white;
+    text-align: center;
+    font-size: 35pt;
+    background-color: rgba(60, 136, 213, 0.8);
+}
+
+#sextitle {
+    font-family: 'kg_who_tells_your_storyRg';
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    width: 50%;
+    height: 5%;
+    font-size: 20pt;
+    margin-top: 7%;
+    display: block;
+    background-color: rgba(60, 136, 213, 0.8);
+}
+
+#sextitle2 {
+    font-family: 'kg_who_tells_your_storyRg';
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    width: 50%;
+    height: 5%;
+    font-size: 20pt;
+    top: 60%;
+    margin-top: 1.5%;
+    display: block;
+    background-color: rgba(60, 136, 213, 0.8);
+}
+
+#sextitle3 {
+    font-family: 'kg_who_tells_your_storyRg';
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    width: 50%;
+    height: 5%;
+    font-size: 20pt;
+    top: 80%;
+    background-color: rgba(60, 136, 213, 0.8);
+}
+
+.sexcorners {
+    position: absolute;
+    width: 48.5%;
+    left: 40%;
+    height: 335px;
+    top: 15%;
+    margin-top: 4%;
+    font-family: 'akrobatregular';
+    font-size: 14pt;
+    column-count: 2;
+    line-height: 5;
+}
+
+#sexinstructions {
+    top: 665px;
+    left: 40%;
+    width: 50%;
+    text-align: center;
+    position: absolute;
+    font-family: 'akrobatregular';
+    font-size: 16pt;
+}
+
+
+/* LAVA FLOW DRINK */
+
+#vacabackground {
+    background: linear-gradient(to bottom, #63A0DD, #ffffff);
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+}
+
+#lavacoverphoto {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    background-image: url(LavaFlow.jpg);
+    margin-top: 7%;
+    left: 13%;
+    width: 25%;
+    height: 83%;
+}
+
+#lavaheader {
+    font-family: 'kg_who_tells_your_storyRg';
+    color: white;
+    text-align: center;
+    font-size: 35pt;
+    background-color: rgba(60, 136, 213, 0.8);
+}
+
+#lavatitle {
+    font-family: 'kg_who_tells_your_storyRg';
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    width: 50%;
+    height: 5%;
+    font-size: 20pt;
+    margin-top: 7%;
+    display: block;
+    background-color: rgba(60, 136, 213, 0.8);
+}
+
+#lavatitle2 {
+    font-family: 'kg_who_tells_your_storyRg';
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    width: 50%;
+    height: 5%;
+    font-size: 20pt;
+    top: 60%;
+    margin-top: 1.5%;
+    display: block;
+    background-color: rgba(60, 136, 213, 0.8);
+}
+
+#lavatitle3 {
+    font-family: 'kg_who_tells_your_storyRg';
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    width: 50%;
+    height: 5%;
+    font-size: 20pt;
+    top: 80%;
+    background-color: rgba(60, 136, 213, 0.8);
+}
+
+.lavacorners {
+    position: absolute;
+    width: 48.5%;
+    left: 40%;
+    height: 335px;
+    top: 15%;
+    margin-top: 4%;
+    font-family: 'akrobatregular';
+    font-size: 14pt;
+    column-count: 2;
+    line-height: 5;
+}
+
+#lavainstructions {
+    top: 665px;
+    left: 40%;
+    width: 50%;
+    text-align: center;
+    position: absolute;
+    font-family: 'akrobatregular';
+    font-size: 16pt;
+}
+
+
+/* INFOGRAPHIC */
+
+#infographic {
+    display: none;
+}
+
+#bodyAll {
+    display: block;
+}
+
+#backbut {
+    background-image: url(backA.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 3%;
+    left: 44%;
+    width: 15%;
+    height: 15%;
+    cursor: pointer;
+}
+
+#background {
+    background: linear-gradient(to bottom, #FFAF74, #EC6F66);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+
+#drinkglass1 {
+    background-image: url(girlglass.svg);
+    background-repeat: no-repeat;
+    animation: shake 0.4s ease-in-out 0.1s infinite alternate;
+    width: 10%;
+    height: 10%;
+    top: 88%;
+    left: 45%;
+    position: absolute;
+    cursor: pointer;
+}
+
+#drinkglass2 {
+    background-image: url(girlglass.svg);
+    background-repeat: no-repeat;
+    animation: shake 0.4s ease-in-out 0.1s infinite alternate;
+    width: 10%;
+    height: 10%;
+    top: 88%;
+    left: 55%;
+    position: absolute;
+    cursor: pointer;
+}
+
+#drinkglass3 {
+    background-image: url(girlglass.svg);
+    background-repeat: no-repeat;
+    animation: shake 0.4s ease-in-out 0.1s infinite alternate;
+    width: 10%;
+    height: 10%;
+    top: 88%;
+    left: 65%;
+    position: absolute;
+    cursor: pointer;
+}
+
+#drinkglass4 {
+    background-image: url(girlglass.svg);
+    background-repeat: no-repeat;
+    animation: shake 0.4s ease-in-out 0.1s infinite alternate;
+    width: 10%;
+    height: 10%;
+    top: 88%;
+    left: 75%;
+    position: absolute;
+    cursor: pointer;
+}
+
+#one {
+    background-image: url(1.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    width: 150%;
+    height: 70%;
+    display: none;
+    animation: drinkshake 1s;
+}
+
+#two {
+    background-image: url(2.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    width: 150%;
+    height: 70%;
+    display: none;
+    animation: drinkshake 1s;
+}
+
+#three {
+    background-image: url(3.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    width: 150%;
+    height: 70%;
+    display: none;
+    animation: drinkshake 1s;
+}
+
+#four {
+    background-image: url(4.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    width: 150%;
+    height: 70%;
+    display: none;
+    animation: drinkshake 1s;
+}
+
+@keyframes drinkshake {
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+
+/* MEDIA QUERIES START HERE !!!!!!! */
+
+
+/* MEDIA QUERIES START HERE !!!!!!! */
+
+
+/* MEDIA QUERIES START HERE !!!!!!! */
+
+@media only screen and (max-width: 900px) {
+    /* HOMEPAGE */
+    header {
+        display: none;
+    }
+    #arrow {
+        display: none;
+    }
+    #webcat {
+        display: none;
+    }
+    #mobilecat {
+        display: block;
+    }
+    #bg {
+        display: none;
+    }
+    #navbar {
+        background-color: rgba(0, 0, 0, .5);
+        position: fixed;
+        width: 100%;
+        height: 5%;
+        display: block;
+        z-index: 999;
+    }
+    #search {
+        width: 60%;
+        height: 85%;
+        position: absolute;
+        top: 6%;
+        left: 62%;
+        z-index: 1;
+        cursor: pointer;
+    }
+    #home {
+        width: 60%;
+        height: 75%;
+        position: absolute;
+        top: 10%;
+        left: 20%;
+        z-index: 1;
+        cursor: pointer;
+    }
+    #backA {
+        width: 60%;
+        height: 85%;
+        position: absolute;
+        top: 8%;
+        left: -20%;
+        z-index: 1;
+        cursor: pointer;
+    }
+    #header3 {
+        background-image: url(Coverphoto1.jpg);
+        background-position: center;
+        Background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 40%;
+        display: block;
+        z-index: -1;
+    }
+    #buzzed {
+        position: absolute;
+        width: 200px;
+        height: 100px;
+        top: 18%;
+        left: 15px;
+        z-index: -1 !important;
+    }
+    h1 {
+        font-family: 'kg_who_tells_your_storyRg';
+        font-size: 25pt;
+        color: white;
+        line-height: 4;
+        text-align: center;
+    }
+    #girlsnight {
+        background-image: url(girlsnight.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 40%;
+        width: 100%;
+        height: 15%;
+        cursor: pointer;
+        z-index: -1;
+    }
+    #girlsnight:hover {
+        transform: scale(1.1, 1.1);
+        transition: all .3s ease-in;
+        vertical-align: middle;
+    }
+    #guysnight {
+        background-image: url(guysnight.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 55%;
+        width: 100%;
+        height: 15%;
+        cursor: pointer;
+        z-index: -1;
+    }
+    #guysnight:hover {
+        transform: scale(1.1, 1.1);
+        transition: all .3s ease-in;
+        vertical-align: middle;
+    }
+    #vacation {
+        background-image: url(vacation.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 70%;
+        width: 100%;
+        height: 15%;
+        cursor: pointer;
+        z-index: -1;
+    }
+    #vacation:hover {
+        transform: scale(1.1, 1.1);
+        transition: all .3s ease-in;
+        vertical-align: middle;
+    }
+    #custom {
+        background-image: url(custom.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 85%;
+        width: 100%;
+        height: 15%;
+        cursor: pointer;
+        z-index: -1;
+    }
+    #custom:hover {
+        transform: scale(1.1, 1.1);
+        transition: all .3s ease-in;
+        vertical-align: middle;
+    }
+    /* CONTACT FORM On Homepage */
+    #contact {
+        top: 35%;
+        left: 25%;
+        font-size: 18px;
+    }
+    #buzzed {
+        z-index: 9;
+    }
+    #overlay {
+        z-index: 9999 !important;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(255, 255, 255, .8);
+        display: none;
+    }
+    #feedback-page {
+        text-align: center;
+    }
+    #form-main {
+        width: 100%;
+        position: fixed;
+        top: 25%;
+        display: none;
+    }
+    #form-div {
+        background-color: rgba(72, 72, 72, 0.4);
+        padding-left: 35px;
+        padding-right: 35px;
+        padding-top: 35px;
+        padding-bottom: 50px;
+        width: 450px;
+        float: left;
+        left: 50%;
+        position: relative;
+        margin-top: 30px;
+        margin-left: -260px;
+        -moz-border-radius: 7px;
+        -webkit-border-radius: 7px;
+    }
+    .feedback-input {
+        color: #3c3c3c;
+        font-family: 'akrobatregular';
+        font-weight: 500;
+        font-size: 18px;
+        border-radius: 0;
+        line-height: 22px;
+        background-color: #fbfbfb;
+        padding: 13px 13px 13px 54px;
+        margin-bottom: 10px;
+        width: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+        border: 3px solid rgba(0, 0, 0, 0);
+    }
+    .feedback-input:focus {
+        background: #fff;
+        box-shadow: 0;
+        border: 3px solid #FFAF74;
+        color: #FFAF74;
+        outline: none;
+        padding: 13px 13px 13px 54px;
+    }
+    .focused {
+        color: #FFAF74;
+        border: #FFAF74 solid 3px;
+    }
+    /* Icons ---------------------------------- */
+    #name {
+        background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+        background-size: 30px 30px;
+        background-position: 11px 8px;
+        background-repeat: no-repeat;
+    }
+    #name:focus {
+        background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+        background-size: 30px 30px;
+        background-position: 8px 5px;
+        background-position: 11px 8px;
+        background-repeat: no-repeat;
+    }
+    #email {
+        background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+        background-size: 30px 30px;
+        background-position: 11px 8px;
+        background-repeat: no-repeat;
+    }
+    #email:focus {
+        background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+        background-size: 30px 30px;
+        background-position: 11px 8px;
+        background-repeat: no-repeat;
+    }
+    #comment {
+        background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+        background-size: 30px 30px;
+        background-position: 11px 8px;
+        background-repeat: no-repeat;
+    }
+    textarea {
+        width: 100%;
+        height: 150px;
+        line-height: 150%;
+        resize: vertical;
+    }
+    input:hover,
+    textarea:hover,
+    input:focus,
+    textarea:focus {
+        background-color: white;
+    }
+    #sub-button {
+        font-family: 'akrobatregular';
+        float: left;
+        width: 100%;
+        border: #fbfbfb solid 4px;
+        cursor: pointer;
+        background-color: #FFAF74;
+        color: white;
+        font-size: 24px;
+        padding-top: 22px;
+        padding-bottom: 22px;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+        margin-top: -4px;
+        font-weight: 700;
+    }
+    #sub-button:hover {
+        background-color: rgba(0, 0, 0, 0);
+        color: #FFAF74;
+    }
+    .submit:hover {
+        color: #FFAF74;
+    }
+    .ease {
+        width: 0px;
+        height: 74px;
+        background-color: #fbfbfb;
+        -webkit-transition: .3s ease;
+        -moz-transition: .3s ease;
+        -o-transition: .3s ease;
+        -ms-transition: .3s ease;
+        transition: .3s ease;
+    }
+    .submit:hover .ease {
+        width: 100%;
+        background-color: white;
+    }
+    /*GIRLS NIGHT */
+    #coverphoto {
+        background-image: url(girlsnight.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 30%;
+    }
+    #header {
+        font-family: 'kg_who_tells_your_storyRg';
+        font-size: 35pt;
+        text-align: center;
+        color: white;
+    }
+    #subheader {
+        font-family: 'kg_who_tells_your_storyRg';
+        font-size: 12pt;
+        margin-top: 2px;
+        text-align: center;
+        color: white;
+    }
+    #mojito {
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        top: 32%;
+        left: 3%;
+        width: 45%;
+        height: 32.2%;
+        background-image: url(Blackberry-Mojito1.jpg);
+    }
+    #mojito:hover {
+        transform: scale(1.1, 1.1);
+        transition: all .4s ease-in;
+        vertical-align: middle;
+    }
+    #bellini {
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        top: 32%;
+        left: 51.5%;
+        width: 45%;
+        height: 32.2%;
+        background-image: url(bellini2.jpg);
+    }
+    #bellini:hover {
+        transform: scale(1.1, 1.1);
+        transition: all .4s ease-in;
+        vertical-align: middle;
+    }
+    #sangria {
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        top: 66%;
+        left: 3%;
+        width: 45%;
+        height: 32.2%;
+        background-image: url(sangria.jpg);
+    }
+    #sangria:hover {
+        transform: scale(1.1, 1.1);
+        transition: all .4s ease-in;
+        vertical-align: middle;
+    }
+    #cosmo {
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        top: 66%;
+        left: 51.5%;
+        width: 45%;
+        height: 32.2%;
+        background-image: url(cosmo2.jpg);
+    }
+    #cosmo:hover {
+        transform: scale(1.1, 1.1);
+        transition: all .4s ease-in;
+        vertical-align: middle;
+    }
+    #gdrink {
+        font-family: 'kg_who_tells_your_storyRg';
+        font-size: 19pt;
+        color: white;
+        text-align: center;
+        margin-top: 265px;
+        background-color: rgba(173, 57, 128, 0.8);
+    }
+    /*GUYS NIGHT */
+    #green {
+        color: rgba(56, 161, 110, 0.8);
+        position: relative;
+    }
+    #Gcoverphoto {
+        background-image: url(guysnight.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 30%;
+    }
+    #header1 {
+        font-family: 'kg_who_tells_your_storyRg';
+        font-size: 35pt;
+        text-align: center;
+        color: white;
+    }
+    #subheader1 {
+        font-family: 'kg_who_tells_your_storyRg';
+        font-size: 12pt;
+        margin-top: 2px;
+        text-align: center;
+        color: white;
+    }
+    #longisland {
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        top: 32%;
+        left: 3%;
+        width: 45%;
+        height: 32.2%;
+        background-image: url(longisland.jpg);
+    }
+    #longisland:hover {
+        transform: scale(1.1, 1.1);
+        transition: all .3s ease-in;
+        vertical-align: middle;
+    }
+    #ceaser {
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        top: 32%;
+        left: 51.5%;
+        width: 45%;
+        height: 32.2%;
+        background-image: url(ceaser2.jpg);
+    }
+    #ceaser:hover {
+        transform: scale(1.1, 1.1);
+        transition: all .3s ease-in;
+        vertical-align: middle;
+    }
+    #gin {
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        top: 66%;
+        left: 3%;
+        width: 45%;
+        height: 32.2%;
+        background-image: url(guysdrink2.jpg);
+    }
+    #gin:hover {
+        transform: scale(1.1, 1.1);
+        transition: all .3s ease-in;
+        vertical-align: middle;
+    }
+    #mintmojito {
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        top: 66%;
+        left: 51.5%;
+        width: 45%;
+        height: 32.2%;
+        background-image: url(mintmojito.jpg);
+    }
+    #mintmojito:hover {
+        transform: scale(1.1, 1.1);
+        transition: all .3s ease-in;
+        vertical-align: middle;
+    }
+    #bdrink {
+        font-family: 'kg_who_tells_your_storyRg';
+        font-size: 19pt;
+        color: white;
+        text-align: center;
+        margin-top: 265px;
+        background-color: rgba(56, 161, 110, 0.8);
+    }
+    /*VACATION */
+    #Vcoverphoto {
+        background-image: url(vacation.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 30%;
+    }
+    #vacayhead {
+        font-family: 'kg_who_tells_your_storyRg';
+        font-size: 35pt;
+        text-align: center;
+        color: white;
+    }
+    #vacaysubhead {
+        font-family: 'kg_who_tells_your_storyRg';
+        font-size: 12pt;
+        margin-top: 2px;
+        text-align: center;
+        color: white;
+    }
+    #pinacolada {
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        top: 32%;
+        left: 3%;
+        width: 45%;
+        height: 32.2%;
+        background-image: url(PinaColada.jpg);
+    }
+    #pinacolada:hover {
+        transform: scale(1.1, 1.1);
+        transition: all .3s ease-in;
+        vertical-align: middle;
+    }
+    #margarita {
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        top: 32%;
+        left: 51.5%;
+        width: 45%;
+        height: 32.2%;
+        background-image: url(Margarita.jpg);
+    }
+    #margarita:hover {
+        transform: scale(1.1, 1.1);
+        transition: all .3s ease-in;
+        vertical-align: middle;
+    }
+    #sex {
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        top: 66%;
+        left: 3%;
+        width: 45%;
+        height: 32.2%;
+        background-image: url(SexontheBeach.jpg);
+    }
+    #sex:hover {
+        transform: scale(1.1, 1.1);
+        transition: all .3s ease-in;
+        vertical-align: middle;
+    }
+    #lava {
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        top: 66%;
+        left: 51.5%;
+        width: 45%;
+        height: 32.2%;
+        background-image: url(LavaFlow.jpg);
+    }
+    #lava:hover {
+        transform: scale(1.1, 1.1);
+        transition: all .3s ease-in;
+        vertical-align: middle;
+    }
+    #vdrink {
+        font-family: 'kg_who_tells_your_storyRg';
+        font-size: 18pt;
+        color: white;
+        text-align: center;
+        margin-top: 265px;
+        background-color: rgba(60, 136, 213, 0.8);
+    }
+    /*CUSTOM */
+    #options {
+        position: fixed;
+        top: 350px;
+        padding: 10px;
+        width: 100%;
+        height: 600px;
+        z-index: 9999;
+        display: none;
+    }
+    #choices {
+        font-family: 'kg_who_tells_your_storyRg';
+        font-size: 25pt;
+        color: white;
+        text-align: center;
+        display: none;
+        position: fixed;
+        top: 270px;
+        left: 110px;
+        text-shadow: 3px 4px 10px black;
+    }
+    #title {
+        position: fixed;
+        width: 186px;
+        height: 40px;
+        top: 650px;
+        left: 30px;
+        font-family: 'kg_who_tells_your_storyRg';
+        font-size: 20pt;
+        color: white;
+        text-align: center;
+        display: none;
+        z-index: 1000;
+        background-color: rgba(173, 57, 128, 0.8);
+        animation-name: fadeIn;
+        animation-duration: 1.5s;
+        animation-delay: 0;
+        animation-timing-function: ease-in-out;
+        visibility: visible !important;
+        box-shadow: 3px 5px 15px black;
+    }
+    #title2 {
+        font-family: 'kg_who_tells_your_storyRg';
+        font-size: 20pt;
+        color: white;
+        position: fixed;
+        width: 186px;
+        height: 40px;
+        top: 650px;
+        right: 26px;
+        text-align: center;
+        display: none;
+        box-shadow: 3px 5px 15px black;
+        background-color: rgba(173, 57, 128, 0.8);
+        animation-name: fadeIn;
+        animation-duration: 1.5s;
+        animation-delay: 0;
+        z-index: 1000;
+        animation-timing-function: ease-in-out;
+        visibility: visible !important;
+    }
+    #Img {
+        width: 185px;
+        height: 290px;
+        position: fixed;
+        top: 450px;
+        left: 30px;
+        z-index: 999;
+        display: none;
+        cursor: pointer;
+        box-shadow: 4px 7px 15px black;
+        animation-name: fadeIn;
+        animation-duration: 1.5s;
+        animation-delay: 0;
+        animation-timing-function: ease-in-out;
+        visibility: visible !important;
+    }
+    @keyframes fadeIn {
+        0% {
+            transform: scale(0);
+            opacity: 0.0;
+        }
+        60% {
+            transform: scale(1.1);
+        }
+        80% {
+            transform: scale(0.9);
+            opacity: 1;
+        }
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+    #Img2 {
+        width: 185px;
+        height: 290px;
+        position: fixed;
+        top: 450px;
+        left: 200px;
+        z-index: 999;
+        display: none;
+        cursor: pointer;
+        box-shadow: 4px 7px 15px black;
+        animation-name: fadeIn;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-in-out;
+        visibility: visible !important;
+    }
+    #bg1 {
+        background: linear-gradient(to bottom, rgba(111, 51, 189, 1) 0%, rgba(111, 51, 189, 1) 25%, rgba(218, 200, 235, 1) 100%);
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        z-index: -1;
+    }
+    #finddrink {
+        position: absolute;
+        z-index: 9;
+        bottom: 117px;
+        left: 53.5%;
+        height: 48px;
+        display: block;
+    }
+    #customheader {
+        font-family: 'kg_who_tells_your_storyRg';
+        font-size: 40pt;
+        margin-top: 30%;
+        text-align: center;
+        color: white;
+    }
+    #customtitle {
+        width: 60%;
+        left: 20%;
+        top: 40.3%;
+        position: absolute;
+        box-shadow: 2px 4px 3px grey;
+        text-shadow: none;
+    }
+    #customtitle1 {
+        width: 60%;
+        height: 4%;
+        left: 20%;
+        top: 64%;
+        position: absolute;
+        font-family: 'kg_who_tells_your_storyRg';
+        font-size: 18pt;
+        background-color: mediumpurple;
+        text-align: center;
+        color: rgba(255, 255, 255, 1);
+        box-shadow: 2px 4px 3px grey;
+        text-shadow: none;
+    }
+    #submit {
+        width: 40%;
+        height: 7%;
+        left: 22%;
+        top: 80%;
+        padding-left: 17px;
+        line-height: 3;
+        text-align: left;
+        position: absolute;
+        font-family: 'kg_who_tells_your_storyRg';
+        font-size: 18pt;
+        background-color: mediumpurple;
+        color: rgba(255, 255, 255, 1);
+        cursor: pointer;
+        box-shadow: 2px 4px 3px grey;
+        text-shadow: none;
+    }
+    .button12 {
+        font-family: 'kg_who_tells_your_storyRg';
+        font-size: 15pt;
+        background-color: mediumpurple;
+        text-align: center;
+        line-height: 2.5;
+        width: 50%;
+        height: 50px;
+        top: 350px;
+        color: rgba(255, 255, 255, 1);
+        transition: all 0.5s;
+        position: relative;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        overflow: hidden;
+        cursor: pointer;
+    }
+    .button12::before {
+        left: -8px;
+        border-left: 70px solid transparent;
+        border-right: 70px solid transparent;
+        border-bottom: 190px solid rgba(255, 255, 255, 0.25);
+    }
+    .button12::after {
+        border-left: 70px solid transparent;
+        border-right: 70px solid transparent;
+        border-bottom: 190px solid rgba(255, 255, 255, 0.25);
+        left: -8px;
+    }
+    #activeA {
+        display: none;
+        left: -8px;
+        border-left: 70px solid transparent;
+        border-right: 70px solid transparent;
+        border-bottom: 190px solid rgba(255, 255, 255, 0.25);
+    }
+    #button12_1 {
+        position: absolute;
+        line-height: 2.5;
+        top: 46%;
+        width: 28%;
+        left: 5%;
+        box-shadow: 2px 4px 3px grey;
+    }
+    #button12_2 {
+        position: absolute;
+        line-height: 2.5;
+        top: 46%;
+        left: 35%;
+        width: 28%;
+        box-shadow: 2px 4px 3px grey;
+    }
+    #button12_3 {
+        position: absolute;
+        line-height: 2.5;
+        top: 46%;
+        left: 65%;
+        width: 28%;
+        box-shadow: 2px 4px 3px grey;
+    }
+    #button12_4 {
+        position: absolute;
+        line-height: 2.5;
+        top: 53%;
+        left: 5%;
+        width: 28%;
+        box-shadow: 2px 4px 3px grey;
+    }
+    #button12_5 {
+        position: absolute;
+        line-height: 2.5;
+        top: 53%;
+        left: 35%;
+        width: 28%;
+        box-shadow: 2px 4px 3px grey;
+    }
+    #button12_6 {
+        position: absolute;
+        line-height: 2.5;
+        top: 53%;
+        left: 65%;
+        width: 28%;
+        box-shadow: 2px 4px 3px grey;
+    }
+    #button12_7 {
+        position: absolute;
+        line-height: 2.5;
+        top: 70%;
+        left: 5%;
+        width: 28%;
+        box-shadow: 2px 4px 3px grey;
+    }
+    #button12_8 {
+        position: absolute;
+        line-height: 2.5;
+        top: 70%;
+        left: 35%;
+        width: 28%;
+        box-shadow: 2px 4px 3px grey;
+    }
+    #button12_9 {
+        position: absolute;
+        line-height: 2.5;
+        top: 70%;
+        left: 65%;
+        width: 28%;
+        box-shadow: 2px 4px 3px grey;
+    }
+    #number1 {
+        display: none;
+    }
+    #number2 {
+        display: none;
+    }
+    #number3 {
+        display: none;
+    }
+    #question {
+        display: none;
+    }
+    
+    #exitbut {
+        bottom: 135px;
+        text-align: center;
+        font-family: 'akrobatregular';
+        font-size: 16pt;
+        color: white;
+        display: none;
+        z-index: 999;
+        position: absolute;
+        left: 40%;
+    }
+    
+    /*MOJITO DRINK */
+    #girlbackground {
+        display: none;
+    }
+    #guysbackground {
+        display: none;
+    }
+    #vacabackground {
+        display: none;
+    }
+    #Mojcoverphoto {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        background-image: url(Blackberry-Mojito1.jpg);
+        margin-top: -5%;
+        width: 100%;
+        height: 45%;
+        left: 0%;
+        display: block;
+    }
+    #Mojheader {
+        font-family: 'kg_who_tells_your_storyRg';
+        color: white;
+        text-align: center;
+        font-size: 35pt;
+        margin-top: 356px;
+        background-color: rgba(173, 57, 128, 0.8);
+        display: block;
+    }
+    .Mojcorners {
+        position: relative;
+        width: 100%;
+        height: 50%;
+        top: 430px;
+        left: 0%;
+        font-family: 'akrobatregular';
+        font-size: 15pt;
+        line-height: 1.5;
+        column-count: 1;
+        display: block;
+    }
+    #mojinstructions {
+        top: 650px;
+        width: 100%;
+        text-align: center;
+        left: 0%;
+        position: absolute;
+        font-family: 'akrobatregular';
+        font-size: 12pt;
+        display: block;
+    }
+    #mojtitle3 {
+        font-family: 'kg_who_tells_your_storyRg';
+        color: white;
+        text-align: center;
+        position: absolute;
+        left: 10%;
+        width: 80%;
+        height: 3%;
+        font-size: 14pt;
+        top: 78%;
+        margin-top: 5%;
+        background-color: rgba(173, 57, 128, 0.8);
+    }
+    #mojtitle {
+        display: none;
+    }
+    #mojtitle2 {
+        display: none;
+    }
+    #pink {
+        color: rgba(173, 57, 128, 0.8);
+        position: relative;
+        display: block;
+        left: 12%;
+    }
+    /*BELLINI DRINK */
+    #bellcoverphoto {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        background-image: url(bellini2.jpg);
+        margin-top: -5%;
+        width: 100%;
+        height: 45%;
+        left: 0%;
+        display: block;
+    }
+    #bellheader {
+        font-family: 'kg_who_tells_your_storyRg';
+        color: white;
+        text-align: center;
+        font-size: 35pt;
+        margin-top: 356px;
+        background-color: rgba(173, 57, 128, 0.8);
+        display: block;
+    }
+    .bellcorners {
+        position: relative;
+        width: 100%;
+        height: 50%;
+        top: 430px;
+        left: 0%;
+        font-family: 'akrobatregular';
+        font-size: 15pt;
+        line-height: 1.5;
+        column-count: 1;
+        display: block;
+    }
+    #bellinstructions {
+        top: 600px;
+        width: 100%;
+        text-align: center;
+        left: 0%;
+        position: absolute;
+        font-family: 'akrobatregular';
+        font-size: 12pt;
+        display: block;
+    }
+    #belltitle3 {
+        font-family: 'kg_who_tells_your_storyRg';
+        color: white;
+        text-align: center;
+        position: absolute;
+        left: 10%;
+        width: 80%;
+        height: 3%;
+        font-size: 14pt;
+        top: 74%;
+        margin-top: 5%;
+        background-color: rgba(173, 57, 128, 0.8);
+    }
+    #belltitle2 {
+        display: none;
+    }
+    #belltitle {
+        display: none;
+    }
+    /* SANGRIA DRINK */
+    #Sangcoverphoto {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        background-image: url(sangria.jpg);
+        margin-top: -5%;
+        width: 100%;
+        height: 45%;
+        left: 0%;
+        display: block;
+    }
+    #Sangheader {
+        font-family: 'kg_who_tells_your_storyRg';
+        color: white;
+        text-align: center;
+        font-size: 35pt;
+        margin-top: 356px;
+        background-color: rgba(173, 57, 128, 0.8);
+        display: block;
+    }
+    .Sangcorners {
+        position: relative;
+        width: 100%;
+        height: 50%;
+        top: 430px;
+        left: 0%;
+        font-family: 'akrobatregular';
+        font-size: 15pt;
+        line-height: 1.5;
+        column-count: 1;
+        display: block;
+    }
+    #sanginstructions {
+        top: 630px;
+        width: 100%;
+        text-align: center;
+        left: 0%;
+        position: absolute;
+        font-family: 'akrobatregular';
+        font-size: 12pt;
+        display: block;
+    }
+    #sangtitle3 {
+        font-family: 'kg_who_tells_your_storyRg';
+        color: white;
+        text-align: center;
+        position: absolute;
+        left: 10%;
+        width: 80%;
+        height: 3%;
+        font-size: 14pt;
+        top: 75%;
+        margin-top: 5%;
+        background-color: rgba(173, 57, 128, 0.8);
+    }
+    #sangtitle2 {
+        display: none;
+    }
+    #sangtitle {
+        display: none;
+    }
+    /*COSMO DRINK */
+    #Cosmocoverphoto {
+        background-image: url(cosmo2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        margin-top: -5%;
+        width: 100%;
+        height: 45%;
+        left: 0%;
+        display: block;
+    }
+    #Cosmoheader {
+        font-family: 'kg_who_tells_your_storyRg';
+        color: white;
+        text-align: center;
+        font-size: 35pt;
+        margin-top: 356px;
+        display: block;
+        background-color: rgba(173, 57, 128, 0.8);
+    }
+    .cosmocorners {
+        position: relative;
+        width: 100%;
+        height: 50%;
+        top: 430px;
+        left: 0%;
+        font-family: 'akrobatregular';
+        font-size: 15pt;
+        line-height: 1.5;
+        column-count: 1;
+        display: block;
+    }
+    #cosmoinstructions {
+        top: 632px;
+        width: 100%;
+        text-align: center;
+        left: 0%;
+        position: absolute;
+        font-family: 'akrobatregular';
+        font-size: 12pt;
+        display: block;
+    }
+    #costitle3 {
+        font-family: 'kg_who_tells_your_storyRg';
+        color: white;
+        text-align: center;
+        position: absolute;
+        left: 10%;
+        width: 80%;
+        height: 3%;
+        font-size: 14pt;
+        top: 78%;
+        margin-top: 5%;
+        background-color: rgba(173, 57, 128, 0.8);
+    }
+    #costitle2 {
+        display: none;
+    }
+    #costitle {
+        display: none;
+    }
+    /* LONG ISLAND DRINK */
+    #teatitle2 {
+        display: none;
+    }
+    #teatitle {
+        display: none;
+    }
+    #teacoverphoto {
+        background-image: url(longisland.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        margin-top: -5%;
+        width: 100%;
+        height: 45%;
+        left: 0%;
+        display: block;
+    }
+    #teaheader {
+        font-family: 'kg_who_tells_your_storyRg';
+        color: white;
+        text-align: center;
+        font-size: 33pt;
+        margin-top: 357px;
+        display: block;
+        background-color: rgba(56, 161, 110, 0.8);
+    }
+    .teacorners {
+        position: relative;
+        width: 100%;
+        height: 50%;
+        top: 430px;
+        left: 0%;
+        font-family: 'akrobatregular';
+        font-size: 15pt;
+        line-height: 1.5;
+        column-count: 1;
+        display: block;
+    }
+    #teainstructions {
+        top: 660px;
+        width: 100%;
+        text-align: center;
+        left: 0%;
+        position: absolute;
+        font-family: 'akrobatregular';
+        font-size: 12pt;
+        display: block;
+    }
+    #teatitle3 {
+        font-family: 'kg_who_tells_your_storyRg';
+        color: white;
+        text-align: center;
+        position: absolute;
+        left: 10%;
+        width: 80%;
+        height: 3%;
+        font-size: 14pt;
+        top: 78%;
+        margin-top: 5%;
+        background-color: rgba(56, 161, 110, 0.8);
+    }
+    /* CEASER DRINK */
+    #ceasertitle2 {
+        display: none;
+    }
+    #ceasertitle {
+        display: none;
+    }
+    #Ceasercoverphoto {
+        background-image: url(ceaser2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        margin-top: -5%;
+        width: 100%;
+        height: 45%;
+        left: 0%;
+        display: block;
+    }
+    #Ceaserheader {
+        font-family: 'kg_who_tells_your_storyRg';
+        color: white;
+        text-align: center;
+        font-size: 33pt;
+        margin-top: 357px;
+        display: block;
+        background-color: rgba(56, 161, 110, 0.8);
+    }
+    .Ceasercorners {
+        position: relative;
+        width: 100%;
+        height: 50%;
+        top: 430px;
+        left: 0%;
+        font-family: 'akrobatregular';
+        font-size: 15pt;
+        line-height: 1.5;
+        column-count: 1;
+        display: block;
+    }
+    #ceaserinstructions {
+        top: 660px;
+        width: 100%;
+        text-align: center;
+        left: 0%;
+        position: absolute;
+        font-family: 'akrobatregular';
+        font-size: 12pt;
+        display: block;
+    }
+    #guystitle3 {
+        font-family: 'kg_who_tells_your_storyRg';
+        color: white;
+        text-align: center;
+        position: absolute;
+        left: 10%;
+        width: 80%;
+        height: 3%;
+        font-size: 14pt;
+        top: 78%;
+        margin-top: 5%;
+        background-color: rgba(56, 161, 110, 0.8);
+    }
+    /* GIN DRINK */
+    #gintitle2 {
+        display: none;
+    }
+    #gintitle {
+        display: none;
+    }
+    #gincoverphoto {
+        background-image: url(guysdrink2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        margin-top: -5%;
+        width: 100%;
+        height: 45%;
+        left: 0%;
+        display: block;
+    }
+    #ginheader {
+        font-family: 'kg_who_tells_your_storyRg';
+        color: white;
+        text-align: center;
+        font-size: 33pt;
+        margin-top: 357px;
+        display: block;
+        background-color: rgba(56, 161, 110, 0.8);
+    }
+    .gincorners {
+        position: relative;
+        width: 100%;
+        height: 50%;
+        top: 450px;
+        left: 0%;
+        font-family: 'akrobatregular';
+        font-size: 15pt;
+        line-height: 1.5;
+        column-count: 1;
+        display: block;
+    }
+    #gininstructions {
+        top: 640px;
+        width: 100%;
+        text-align: center;
+        left: 0%;
+        position: absolute;
+        font-family: 'akrobatregular';
+        font-size: 13pt;
+        display: block;
+    }
+    #guystitle3 {
+        font-family: 'kg_who_tells_your_storyRg';
+        color: white;
+        text-align: center;
+        position: absolute;
+        left: 10%;
+        width: 80%;
+        height: 3%;
+        font-size: 14pt;
+        top: 78%;
+        margin-top: 5%;
+        background-color: rgba(56, 161, 110, 0.8);
+    }
+    /* MINT MOJITO DRINK */
+    #minttitle2 {
+        display: none;
+    }
+    #minttitle {
+        display: none;
+    }
+    #mintcoverphoto {
+        background-image: url(mintmojito.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        margin-top: -5%;
+        width: 100%;
+        height: 45%;
+        left: 0%;
+        display: block;
+    }
+    #mintheader {
+        font-family: 'kg_who_tells_your_storyRg';
+        color: white;
+        text-align: center;
+        font-size: 33pt;
+        margin-top: 357px;
+        display: block;
+        background-color: rgba(56, 161, 110, 0.8);
+    }
+    .mintcorners {
+        position: relative;
+        width: 100%;
+        height: 50%;
+        top: 450px;
+        left: 0%;
+        font-family: 'akrobatregular';
+        font-size: 15pt;
+        line-height: 1.5;
+        column-count: 1;
+        display: block;
+    }
+    #mintinstructions {
+        top: 655px;
+        width: 100%;
+        text-align: center;
+        left: 0%;
+        position: absolute;
+        font-family: 'akrobatregular';
+        font-size: 12pt;
+        display: block;
+    }
+    #guystitle3 {
+        font-family: 'kg_who_tells_your_storyRg';
+        color: white;
+        text-align: center;
+        position: absolute;
+        left: 10%;
+        width: 80%;
+        height: 3%;
+        font-size: 14pt;
+        top: 78%;
+        margin-top: 5%;
+        background-color: rgba(56, 161, 110, 0.8);
+    }
+    /* PINA COLDA DRINK */
+    #pinatitle2 {
+        display: none;
+    }
+    #pinatitle {
+        display: none;
+    }
+    #Pinacoverphoto {
+        background-image: url(PinaColada.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        margin-top: -5%;
+        width: 100%;
+        height: 45%;
+        left: 0%;
+        display: block;
+    }
+    #Pinaheader {
+        font-family: 'kg_who_tells_your_storyRg';
+        color: white;
+        text-align: center;
+        font-size: 33pt;
+        margin-top: 357px;
+        display: block;
+        background-color: rgba(60, 136, 213, 0.8);
+    }
+    .Pinacorners {
+        position: relative;
+        width: 100%;
+        height: 50%;
+        top: 450px;
+        left: 0%;
+        font-family: 'akrobatregular';
+        font-size: 15pt;
+        line-height: 1.5;
+        column-count: 1;
+        display: block;
+    }
+    #pinainstructions {
+        top: 655px;
+        width: 100%;
+        text-align: center;
+        left: 0%;
+        position: absolute;
+        font-family: 'akrobatregular';
+        font-size: 12pt;
+        display: block;
+    }
+    #vacatitle3 {
+        font-family: 'kg_who_tells_your_storyRg';
+        color: white;
+        text-align: center;
+        position: absolute;
+        left: 10%;
+        width: 80%;
+        height: 3%;
+        font-size: 14pt;
+        top: 78%;
+        margin-top: 5%;
+        background-color: rgba(60, 136, 213, 0.8);
+    }
+    /* MARGARTIA  DRINK */
+    #margtitle2 {
+        display: none;
+    }
+    #margtitle {
+        display: none;
+    }
+    #margcoverphoto {
+        background-image: url(Margarita.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        margin-top: -5%;
+        width: 100%;
+        height: 45%;
+        left: 0%;
+        display: block;
+    }
+    #margheader {
+        font-family: 'kg_who_tells_your_storyRg';
+        color: white;
+        text-align: center;
+        font-size: 33pt;
+        margin-top: 357px;
+        display: block;
+        background-color: rgba(60, 136, 213, 0.8);
+    }
+    .margcorners {
+        position: relative;
+        width: 100%;
+        height: 50%;
+        top: 450px;
+        left: 0%;
+        font-family: 'akrobatregular';
+        font-size: 15pt;
+        line-height: 1.5;
+        column-count: 1;
+        display: block;
+    }
+    #marginstructions {
+        top: 655px;
+        width: 100%;
+        text-align: center;
+        left: 0%;
+        position: absolute;
+        font-family: 'akrobatregular';
+        font-size: 12pt;
+        display: block;
+    }
+    #vacatitle3 {
+        font-family: 'kg_who_tells_your_storyRg';
+        color: white;
+        text-align: center;
+        position: absolute;
+        left: 10%;
+        width: 80%;
+        height: 3%;
+        font-size: 14pt;
+        top: 78%;
+        margin-top: 5%;
+        background-color: rgba(60, 136, 213, 0.8);
+    }
+    /* SEX ON THE BEACH DRINK */
+    #sextitle2 {
+        display: none;
+    }
+    #sextitle {
+        display: none;
+    }
+    #sexcoverphoto {
+        background-image: url(SexontheBeach.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        margin-top: -5%;
+        width: 100%;
+        height: 45%;
+        left: 0%;
+        display: block;
+    }
+    #sexheader {
+        font-family: 'kg_who_tells_your_storyRg';
+        color: white;
+        text-align: center;
+        font-size: 28pt;
+        margin-top: 370px;
+        display: block;
+        background-color: rgba(60, 136, 213, 0.8);
+    }
+    .sexcorners {
+        position: relative;
+        width: 100%;
+        height: 50%;
+        top: 450px;
+        left: 0%;
+        font-family: 'akrobatregular';
+        font-size: 15pt;
+        line-height: 1.5;
+        column-count: 1;
+        display: block;
+    }
+    #sexinstructions {
+        top: 655px;
+        width: 100%;
+        text-align: center;
+        left: 0%;
+        position: absolute;
+        font-family: 'akrobatregular';
+        font-size: 12pt;
+        display: block;
+    }
+    #vacatitle3 {
+        font-family: 'kg_who_tells_your_storyRg';
+        color: white;
+        text-align: center;
+        position: absolute;
+        left: 10%;
+        width: 80%;
+        height: 3%;
+        font-size: 14pt;
+        top: 78%;
+        margin-top: 5%;
+        background-color: rgba(60, 136, 213, 0.8);
+    }
+    /* LAVA FLOW DRINK */
+    #lavatitle2 {
+        display: none;
+    }
+    #lavatitle {
+        display: none;
+    }
+    #lavacoverphoto {
+        background-image: url(LavaFlow.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        margin-top: -5%;
+        width: 100%;
+        height: 45%;
+        left: 0%;
+        display: block;
+    }
+    #lavaheader {
+        font-family: 'kg_who_tells_your_storyRg';
+        color: white;
+        text-align: center;
+        font-size: 28pt;
+        margin-top: 370px;
+        display: block;
+        background-color: rgba(60, 136, 213, 0.8);
+    }
+    .lavacorners {
+        position: relative;
+        width: 105%;
+        height: 50%;
+        top: 450px;
+        left: 0%;
+        font-family: 'akrobatregular';
+        font-size: 15pt;
+        line-height: 1.5;
+        column-count: 1;
+        display: block;
+    }
+    #lavainstructions {
+        top: 655px;
+        width: 100%;
+        text-align: center;
+        left: 0%;
+        position: absolute;
+        font-family: 'akrobatregular';
+        font-size: 12pt;
+        display: block;
+    }
+    #vacatitle3 {
+        font-family: 'kg_who_tells_your_storyRg';
+        color: white;
+        text-align: center;
+        position: absolute;
+        left: 10%;
+        width: 80%;
+        height: 3%;
+        font-size: 14pt;
+        top: 78%;
+        margin-top: 5%;
+        background-color: rgba(60, 136, 213, 0.8);
+    }
+    /*INFOGRAPHIC */
+    #background {
+        background: linear-gradient(to bottom, #FFAF74, #EC6F66);
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+    }
+    #one {
+        background-image: url(1.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 20%;
+        left: -10%;
+        width: 150%;
+        height: 70%;
+        display: none;
+    }
+    #two {
+        background-image: url(2.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 20%;
+        left: -10%;
+        width: 150%;
+        height: 70%;
+        display: none;
+    }
+    #three {
+        background-image: url(3.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 20%;
+        left: -10%;
+        width: 150%;
+        height: 70%;
+        display: none;
+    }
+    #four {
+        background-image: url(4.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 20%;
+        left: -10%;
+        width: 150%;
+        height: 70%;
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    #background {
+        background: linear-gradient(to bottom, #FFAF74, #EC6F66);
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+    }
+    #one {
+        background-image: url(1.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 20%;
+        left: -20%;
+        width: 150%;
+        height: 70%;
+        display: none;
+    }
+    #two {
+        background-image: url(2.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 20%;
+        left: -20%;
+        width: 150%;
+        height: 70%;
+        display: none;
+    }
+    #three {
+        background-image: url(3.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 20%;
+        left: -20%;
+        width: 150%;
+        height: 70%;
+        display: none;
+    }
+    #four {
+        background-image: url(4.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 20%;
+        left: -20%;
+        width: 150%;
+        height: 70%;
+        display: none;
+    }
+    .facts {
+        position: absolute;
+        top: 80%;
+        left: 2%;
+        text-align: center;
+        font-family: 'akrobatregular';
+        font-size: 16pt;
+        color: white;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    #form-div {
+        left: 3%;
+        margin-right: 3%;
+        width: 88%;
+        margin-left: 0;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    #drinkglass1 {
+        background-image: url(girlglass.svg);
+        background-repeat: no-repeat;
+        animation: shake 0.4s ease-in-out 0.1s infinite alternate;
+        width: 10%;
+        height: 10%;
+        top: 88%;
+        left: 20%;
+        position: absolute;
+        cursor: pointer;
+    }
+    #drinkglass2 {
+        background-image: url(girlglass.svg);
+        background-repeat: no-repeat;
+        animation: shake 0.4s ease-in-out 0.1s infinite alternate;
+        width: 10%;
+        height: 10%;
+        top: 88%;
+        left: 35%;
+        position: absolute;
+        cursor: pointer;
+    }
+    #drinkglass3 {
+        background-image: url(girlglass.svg);
+        background-repeat: no-repeat;
+        animation: shake 0.4s ease-in-out 0.1s infinite alternate;
+        width: 10%;
+        height: 10%;
+        top: 88%;
+        left: 50%;
+        position: absolute;
+        cursor: pointer;
+    }
+    #drinkglass4 {
+        background-image: url(girlglass.svg);
+        background-repeat: no-repeat;
+        animation: shake 0.4s ease-in-out 0.1s infinite alternate;
+        width: 10%;
+        height: 10%;
+        top: 88%;
+        left: 65%;
+        position: absolute;
+        cursor: pointer;
+    }
+}

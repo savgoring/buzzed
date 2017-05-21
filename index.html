@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title> BUZZED </title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css" />
+
+</head>
+
+<body>
+    <div id="overlay"></div>
+    <div id="bg"></div>
+
+
+    <div id="navbar">
+
+        <a href="custom.html"><img src="search.svg" id="search"></a>
+
+        <a href="index.html"><img src="homebutton.svg" id="home"></a>
+
+    </div>
+
+    <header class="header__wrap">
+        <div class="wrap nav">
+
+            <a href="index.html"><img src="Buzzed_Logo.svg" alt="LOGO" /></a>
+
+        </div>
+    </header>
+
+    <div>
+        <a href="#girlsnightw"> <img src="arrow.svg" id="arrow"> </a>
+    </div>
+
+    <div id="header3"></div>
+    <div id="buzzed"></div>
+
+    <div id="webcat">
+        <div id="girlsnightw">
+            <h1><a href="girlsnightout.html">GIRLS NIGHT OUT</a></h1>
+        </div>
+        <div id="guysnightw">
+            <h1><a href="guysnightout.html"> GUYS NIGHT OUT </a></h1>
+        </div>
+        <div id="vacationw">
+            <h1><a href="vacation.html">VACATION</a> </h1>
+        </div>
+        <div id="customw">
+            <h1><a href="custom.html">FIND DRINK</a>
+            </h1>
+        </div>
+    </div>
+
+    <div id="mobilecat">
+        <div id="girlsnight">
+            <h1><a href="girlsnightout.html">GIRLS NIGHT OUT
+        </a></h1>
+        </div>
+
+        <div id="guysnight">
+            <h1><a href="guysnightout.html"> GUYS NIGHT OUT </a></h1>
+        </div>
+
+
+        <div id="vacation">
+            <h1><a href="vacation.html">VACATION</a> </h1>
+        </div>
+
+
+        <div id="custom">
+            <h1><a href="custom.html">FIND DRINK</a>
+            </h1>
+        </div>
+    </div>
+
+
+    <p id="contact"> Have Any Questions? <b> Contact Us!</b></p>
+
+
+
+    <div id="form-main">
+        <div id="form-div">
+            <form class="form" id="form1">
+
+                <p class="name">
+                    <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+                </p>
+
+                <p class="email">
+                    <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+                </p>
+
+                <p class="text">
+                    <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
+                </p>
+
+
+                <div class="submit">
+                    <input type="submit" value="SEND" id="sub-button" />
+                    <div class="ease"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+    </script>
+
+    <script>
+        $(function() {            
+            $('a[href*="#"]:not([href="#"])').click(function() {                
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {                    
+                    var target = $(this.hash);                    
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');                    
+                    if (target.length) {                        
+                        $('html, body').animate({                            
+                            scrollTop: target.offset().top - 100                        
+                        }, 600);                        
+                        return false;                    
+                    }                
+                }            
+            });        
+        });
+
+
+
+
+        var contactForm = document.getElementById("form-main");
+        var contactBut = document.getElementById("contact");
+        var overlay = document.getElementById("overlay");
+        var arrow = document.getElementById("arrow");
+        var submitBut = document.getElementById("sub-button");
+        contactBut.addEventListener("click", function() {
+            contactForm.style.display = "block";
+            overlay.style.display = "block";
+            arrow.style.zIndex = "-1";
+
+        });
+
+        submitBut.addEventListener("click", function() {
+            contactForm.style.display = "none";
+            overlay.style.display = "none";
+            arrow.style.zIndex = "999";
+
+        });
+    </script>
+
+
+</body>
+
+</html>
